@@ -1,0 +1,2710 @@
+{
+  "schema_version": 1,
+  "notes": [
+    "Subtitles are the timing authority. Boundaries inside a subtitle cue use proportional word estimates, not verified word-level alignment.",
+    "Four equal vertical image sections reveal from left to right. Images retain their original proportions on a white 16:9 canvas.",
+    "Each later image enters masked after a half-screen slide. A second half-screen slide precedes its third section, bringing the whole image into view.",
+    "The hand tip coordinates are retained from the prior compatible configuration on the assumption that the same hand.png is used.",
+    "The new video audio file was not supplied. output.duration is therefore set to the final subtitle(8).srt timestamp (514.920 seconds). If editor.py reports an audio-duration mismatch, measure the actual new audio with ffprobe and update output.duration plus the final section/camera hold.",
+    "Assumed project-relative image paths are images/01.png through images/26.png. The actual image and hand assets were not supplied for this generation.",
+    "Structural validation used temporary placeholder images/hand and a silent audio file matching the subtitle duration; it verifies editor.py schema/timeline constraints but not the duration or presence of the eventual production audio/assets.",
+    "No subtitles are burned in; subtitle(8).srt supplies timing. Image reveals are serpentine brush wipes, not recovered original drawing strokes."
+  ],
+  "sources": {
+    "subtitles": "subtitle.srt",
+    "narration": "script.md",
+    "beat_script": "script.md",
+    "image_prompts": "script.md"
+  },
+  "output": {
+    "path": "output.mp4",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "duration": 514.92,
+    "gpu": false,
+    "overwrite": false,
+    "bitrate": "8M",
+    "maxrate": "12M",
+    "bufsize": "24M",
+    "cpu_preset": "medium",
+    "nvenc_preset": "p6",
+    "keyframe_seconds": 2,
+    "gpu_fallback_to_cpu": true,
+    "progress_interval_seconds": 2
+  },
+  "audio": {
+    "path": "audio.mp3",
+    "bitrate": "192k",
+    "sample_rate": 48000
+  },
+  "canvas": {
+    "background": "#FFFFFF",
+    "fit": "contain"
+  },
+  "hand": {
+    "path": "hand.png",
+    "enabled": true,
+    "height_fraction": 0.75,
+    "tip": [
+      0.267,
+      0.072
+    ]
+  },
+  "reveal": {
+    "pattern": "serpentine",
+    "brush_width_fraction": 0.025,
+    "row_spacing_fraction": 0.82
+  },
+  "camera": {
+    "easing": "smoothstep",
+    "keyframes": [
+      {
+        "time": 0,
+        "x": 0
+      },
+      {
+        "time": 19.051,
+        "x": 0.0
+      },
+      {
+        "time": 19.651,
+        "x": 0.5
+      },
+      {
+        "time": 30.56,
+        "x": 0.5
+      },
+      {
+        "time": 31.16,
+        "x": 1.0
+      },
+      {
+        "time": 42.24,
+        "x": 1.0
+      },
+      {
+        "time": 42.84,
+        "x": 1.5
+      },
+      {
+        "time": 51.16,
+        "x": 1.5
+      },
+      {
+        "time": 51.76,
+        "x": 2.0
+      },
+      {
+        "time": 60.82,
+        "x": 2.0
+      },
+      {
+        "time": 61.42,
+        "x": 2.5
+      },
+      {
+        "time": 70.64,
+        "x": 2.5
+      },
+      {
+        "time": 71.24,
+        "x": 3.0
+      },
+      {
+        "time": 79.16,
+        "x": 3.0
+      },
+      {
+        "time": 79.76,
+        "x": 3.5
+      },
+      {
+        "time": 90.52,
+        "x": 3.5
+      },
+      {
+        "time": 91.12,
+        "x": 4.0
+      },
+      {
+        "time": 100.28,
+        "x": 4.0
+      },
+      {
+        "time": 100.88,
+        "x": 4.5
+      },
+      {
+        "time": 108.84,
+        "x": 4.5
+      },
+      {
+        "time": 109.44,
+        "x": 5.0
+      },
+      {
+        "time": 120.6,
+        "x": 5.0
+      },
+      {
+        "time": 121.2,
+        "x": 5.5
+      },
+      {
+        "time": 130.68,
+        "x": 5.5
+      },
+      {
+        "time": 131.28,
+        "x": 6.0
+      },
+      {
+        "time": 140.24,
+        "x": 6.0
+      },
+      {
+        "time": 140.84,
+        "x": 6.5
+      },
+      {
+        "time": 151.0,
+        "x": 6.5
+      },
+      {
+        "time": 151.6,
+        "x": 7.0
+      },
+      {
+        "time": 162.24,
+        "x": 7.0
+      },
+      {
+        "time": 162.84,
+        "x": 7.5
+      },
+      {
+        "time": 172.88,
+        "x": 7.5
+      },
+      {
+        "time": 173.48,
+        "x": 8.0
+      },
+      {
+        "time": 180.8,
+        "x": 8.0
+      },
+      {
+        "time": 181.4,
+        "x": 8.5
+      },
+      {
+        "time": 191.12,
+        "x": 8.5
+      },
+      {
+        "time": 191.72,
+        "x": 9.0
+      },
+      {
+        "time": 199.16,
+        "x": 9.0
+      },
+      {
+        "time": 199.76,
+        "x": 9.5
+      },
+      {
+        "time": 210.52,
+        "x": 9.5
+      },
+      {
+        "time": 211.12,
+        "x": 10.0
+      },
+      {
+        "time": 220.72,
+        "x": 10.0
+      },
+      {
+        "time": 221.32,
+        "x": 10.5
+      },
+      {
+        "time": 231.36,
+        "x": 10.5
+      },
+      {
+        "time": 231.96,
+        "x": 11.0
+      },
+      {
+        "time": 241.88,
+        "x": 11.0
+      },
+      {
+        "time": 242.48,
+        "x": 11.5
+      },
+      {
+        "time": 250.96,
+        "x": 11.5
+      },
+      {
+        "time": 251.56,
+        "x": 12.0
+      },
+      {
+        "time": 260.62,
+        "x": 12.0
+      },
+      {
+        "time": 261.22,
+        "x": 12.5
+      },
+      {
+        "time": 271.92,
+        "x": 12.5
+      },
+      {
+        "time": 272.52,
+        "x": 13.0
+      },
+      {
+        "time": 282.0,
+        "x": 13.0
+      },
+      {
+        "time": 282.6,
+        "x": 13.5
+      },
+      {
+        "time": 293.0,
+        "x": 13.5
+      },
+      {
+        "time": 293.6,
+        "x": 14.0
+      },
+      {
+        "time": 303.4,
+        "x": 14.0
+      },
+      {
+        "time": 304.0,
+        "x": 14.5
+      },
+      {
+        "time": 312.8,
+        "x": 14.5
+      },
+      {
+        "time": 313.4,
+        "x": 15.0
+      },
+      {
+        "time": 321.92,
+        "x": 15.0
+      },
+      {
+        "time": 322.52,
+        "x": 15.5
+      },
+      {
+        "time": 333.44,
+        "x": 15.5
+      },
+      {
+        "time": 334.04,
+        "x": 16.0
+      },
+      {
+        "time": 343.8,
+        "x": 16.0
+      },
+      {
+        "time": 344.4,
+        "x": 16.5
+      },
+      {
+        "time": 352.099,
+        "x": 16.5
+      },
+      {
+        "time": 352.699,
+        "x": 17.0
+      },
+      {
+        "time": 362.56,
+        "x": 17.0
+      },
+      {
+        "time": 363.16,
+        "x": 17.5
+      },
+      {
+        "time": 371.32,
+        "x": 17.5
+      },
+      {
+        "time": 371.92,
+        "x": 18.0
+      },
+      {
+        "time": 379.4,
+        "x": 18.0
+      },
+      {
+        "time": 380.0,
+        "x": 18.5
+      },
+      {
+        "time": 387.8,
+        "x": 18.5
+      },
+      {
+        "time": 388.4,
+        "x": 19.0
+      },
+      {
+        "time": 398.6,
+        "x": 19.0
+      },
+      {
+        "time": 399.2,
+        "x": 19.5
+      },
+      {
+        "time": 407.84,
+        "x": 19.5
+      },
+      {
+        "time": 408.44,
+        "x": 20.0
+      },
+      {
+        "time": 417.2,
+        "x": 20.0
+      },
+      {
+        "time": 417.8,
+        "x": 20.5
+      },
+      {
+        "time": 426.16,
+        "x": 20.5
+      },
+      {
+        "time": 426.76,
+        "x": 21.0
+      },
+      {
+        "time": 438.64,
+        "x": 21.0
+      },
+      {
+        "time": 439.24,
+        "x": 21.5
+      },
+      {
+        "time": 446.64,
+        "x": 21.5
+      },
+      {
+        "time": 447.24,
+        "x": 22.0
+      },
+      {
+        "time": 456.04,
+        "x": 22.0
+      },
+      {
+        "time": 456.64,
+        "x": 22.5
+      },
+      {
+        "time": 465.04,
+        "x": 22.5
+      },
+      {
+        "time": 465.64,
+        "x": 23.0
+      },
+      {
+        "time": 476.04,
+        "x": 23.0
+      },
+      {
+        "time": 476.64,
+        "x": 23.5
+      },
+      {
+        "time": 484.08,
+        "x": 23.5
+      },
+      {
+        "time": 484.68,
+        "x": 24.0
+      },
+      {
+        "time": 495.32,
+        "x": 24.0
+      },
+      {
+        "time": 495.92,
+        "x": 24.5
+      },
+      {
+        "time": 506.44,
+        "x": 24.5
+      },
+      {
+        "time": 507.04,
+        "x": 25.0
+      },
+      {
+        "time": 514.92,
+        "x": 25.0
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "image": "images/01.png",
+      "sections": [
+        {
+          "id": 1,
+          "rect": [
+            0.0,
+            0,
+            0.25,
+            1
+          ],
+          "start": 0.0,
+          "draw_end": 6.28,
+          "end": 6.5,
+          "narration": "Picture the usual map of prehistory: people leave Africa, spread through Asia, then cross into the Americas.",
+          "visual": "A simple globe with Africa and an outward trail of footprints.",
+          "timing_source": {
+            "cue": 1,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "Picture the usual map of prehistory, people leave Africa, spread through Asia, and cross"
+          }
+        },
+        {
+          "id": 2,
+          "rect": [
+            0.25,
+            0,
+            0.5,
+            1
+          ],
+          "start": 6.5,
+          "draw_end": 10.56,
+          "end": 11.36,
+          "narration": "It is a useful sketch, but sketches can hide whole populations between their arrows.",
+          "visual": "A map arrow skips over a pale, empty Siberian region.",
+          "timing_source": {
+            "cue": 3,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "It is a useful sketch, but sketches can hide whole populations between their arrows."
+          }
+        },
+        {
+          "id": 3,
+          "rect": [
+            0.5,
+            0,
+            0.75,
+            1
+          ],
+          "start": 11.36,
+          "draw_end": 15.94,
+          "end": 16.16,
+          "narration": "In Siberia, the grave of one small child exposed one of those missing stories.",
+          "visual": "A small child’s burial outline emerges beneath Siberian soil.",
+          "timing_source": {
+            "cue": 4,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "In Siberia, the grave of one small child exposed one of those missing stories."
+          }
+        },
+        {
+          "id": 4,
+          "rect": [
+            0.75,
+            0,
+            1.0,
+            1
+          ],
+          "start": 16.16,
+          "draw_end": 18.851,
+          "end": 19.651,
+          "narration": "His DNA connected places we had been taught to imagine separately.",
+          "visual": "Three delicate threads lead from a DNA helix toward distant land shapes.",
+          "timing_source": {
+            "cue": 5,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "His DNA connected places we have been taught to imagine separately, the place is Malta,"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "image": "images/02.png",
+      "sections": [
+        {
+          "id": 1,
+          "rect": [
+            0.0,
+            0,
+            0.25,
+            1
+          ],
+          "start": 19.651,
+          "draw_end": 25.98,
+          "end": 26.2,
+          "narration": "The place is Mal’ta, near Lake Baikal, where archaeologists found an Ice Age settlement and a child’s burial.",
+          "visual": "A tiny settlement beside a river near a round lake.",
+          "timing_source": {
+            "cue": 5,
+            "word_offset": 11,
+            "method": "estimated_within_cue",
+            "cue_text": "His DNA connected places we have been taught to imagine separately, the place is Malta,"
+          }
+        },
+        {
+          "id": 2,
+          "rect": [
+            0.25,
+            0,
+            0.5,
+            1
+          ],
+          "start": 26.2,
+          "draw_end": 30.36,
+          "end": 31.16,
+          "narration": "He lived about twenty-four thousand years ago, long before farming, cities, or written borders.",
+          "visual": "A child silhouette beneath a large snowflake and a distant sun.",
+          "timing_source": {
+            "cue": 7,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "He lived about 24,000 years ago, long before farming cities or written borders."
+          }
+        },
+        {
+          "id": 3,
+          "rect": [
+            0.5,
+            0,
+            0.75,
+            1
+          ],
+          "start": 31.16,
+          "draw_end": 36.32,
+          "end": 36.54,
+          "narration": "The site held carved ivory objects and ornaments, traces of skill and social life.",
+          "visual": "Ivory ornaments and a small carved figure arranged like archaeological finds.",
+          "timing_source": {
+            "cue": 8,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "The site held carved ivory objects and ornaments, traces of skill and social life."
+          }
+        },
+        {
+          "id": 4,
+          "rect": [
+            0.75,
+            0,
+            1.0,
+            1
+          ],
+          "start": 36.54,
+          "draw_end": 42.04,
+          "end": 42.84,
+          "narration": "For decades, the burial was remarkable. Then scientists learned to read the DNA still held in ancient bone.",
+          "visual": "A bone fragment magnified to show a faint DNA helix.",
+          "timing_source": {
+            "cue": 9,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "For decades the burial was remarkable."
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "image": "images/03.png",
+      "sections": [
+        {
+          "id": 1,
+          "rect": [
+            0.0,
+            0,
+            0.25,
+            1
+          ],
+          "start": 42.84,
+          "draw_end": 46.78,
+          "end": 47.0,
+          "narration": "Ancient DNA does not tell us the child’s name, language, or favorite story.",
+          "visual": "An anonymous child silhouette with an empty speech bubble.",
+          "timing_source": {
+            "cue": 11,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "Ancient DNA does not tell us the child's name, language or favourite story."
+          }
+        },
+        {
+          "id": 2,
+          "rect": [
+            0.25,
+            0,
+            0.5,
+            1
+          ],
+          "start": 47.0,
+          "draw_end": 50.96,
+          "end": 51.76,
+          "narration": "It lets researchers compare inherited patterns with those in other ancient and living people.",
+          "visual": "Several DNA strands aligned beneath a magnifying glass.",
+          "timing_source": {
+            "cue": 12,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "It lets researchers compare inherited patterns with those in other ancient and living people."
+          }
+        },
+        {
+          "id": 3,
+          "rect": [
+            0.5,
+            0,
+            0.75,
+            1
+          ],
+          "start": 51.76,
+          "draw_end": 55.46,
+          "end": 55.68,
+          "narration": "Think of it as finding shared spelling mistakes in copies of a very old book.",
+          "visual": "Two worn manuscript pages with matching ink marks.",
+          "timing_source": {
+            "cue": 13,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "Think of it as finding shared spelling mistakes in copies of a very old book."
+          }
+        },
+        {
+          "id": 4,
+          "rect": [
+            0.75,
+            0,
+            1.0,
+            1
+          ],
+          "start": 55.68,
+          "draw_end": 60.62,
+          "end": 61.42,
+          "narration": "The more patterns two groups share, the more their histories may overlap, though the details still need testing.",
+          "visual": "A branching family tree with a small question mark at one fork.",
+          "timing_source": {
+            "cue": 14,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "The more patterns two groups share, the more their histories may overlap."
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "image": "images/04.png",
+      "sections": [
+        {
+          "id": 1,
+          "rect": [
+            0.0,
+            0,
+            0.25,
+            1
+          ],
+          "start": 61.42,
+          "draw_end": 66.58,
+          "end": 66.8,
+          "narration": "The Mal’ta genome produced a surprise. It shared ancestry with Indigenous peoples of the Americas.",
+          "visual": "A child’s DNA strand paired with a distant American ancestry tree.",
+          "timing_source": {
+            "cue": 16,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "The Malta genome produced a surprise."
+          }
+        },
+        {
+          "id": 2,
+          "rect": [
+            0.25,
+            0,
+            0.5,
+            1
+          ],
+          "start": 66.8,
+          "draw_end": 70.44,
+          "end": 71.24,
+          "narration": "It also showed deep genetic links to ancient populations farther west in Eurasia.",
+          "visual": "Another strand paired with an ancient western Eurasian tree.",
+          "timing_source": {
+            "cue": 18,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "It also showed deep genetic links to ancient populations farther west in Eurasia."
+          }
+        },
+        {
+          "id": 3,
+          "rect": [
+            0.5,
+            0,
+            0.75,
+            1
+          ],
+          "start": 71.24,
+          "draw_end": 75.22,
+          "end": 75.44,
+          "narration": "A Siberian child suddenly sat near the center of a much larger family tree.",
+          "visual": "The child silhouette stands at a branching root system.",
+          "timing_source": {
+            "cue": 19,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "A Siberian child suddenly sat near the centre of a much larger family tree."
+          }
+        },
+        {
+          "id": 4,
+          "rect": [
+            0.75,
+            0,
+            1.0,
+            1
+          ],
+          "start": 75.44,
+          "draw_end": 78.96,
+          "end": 79.76,
+          "narration": "The old map needed more than a longer arrow. It needed a new branch.",
+          "visual": "A simple map gains a fork where one route had been drawn.",
+          "timing_source": {
+            "cue": 20,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "The old map needed more than a longer arrow."
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "image": "images/05.png",
+      "sections": [
+        {
+          "id": 1,
+          "rect": [
+            0.0,
+            0,
+            0.25,
+            1
+          ],
+          "start": 79.76,
+          "draw_end": 86.02,
+          "end": 86.24,
+          "narration": "Researchers call this broad ancestral lineage Ancient North Eurasian. That is a genetic label, not a nation.",
+          "visual": "A loose group of Ice Age figures beneath the small label “Ancient North Eurasian”.",
+          "timing_source": {
+            "cue": 22,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "Researchers call this broad ancestral lineage, ancient north Eurasian."
+          }
+        },
+        {
+          "id": 2,
+          "rect": [
+            0.25,
+            0,
+            0.5,
+            1
+          ],
+          "start": 86.24,
+          "draw_end": 90.32,
+          "end": 91.12,
+          "narration": "The child was one member of a population, not the ancestor of everyone who came later.",
+          "visual": "One child inside a larger circle of people.",
+          "timing_source": {
+            "cue": 24,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "The child was one member of a population, not the ancestor of everyone who came later."
+          }
+        },
+        {
+          "id": 3,
+          "rect": [
+            0.5,
+            0,
+            0.75,
+            1
+          ],
+          "start": 91.12,
+          "draw_end": 95.38,
+          "end": 95.6,
+          "narration": "Nor does a shared genetic signal mean people crossed directly from Europe to America.",
+          "visual": "A crossed-out ocean shortcut between Europe and America.",
+          "timing_source": {
+            "cue": 25,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "Nor does a shared genetic signal mean people cross directly from Europe to America."
+          }
+        },
+        {
+          "id": 4,
+          "rect": [
+            0.75,
+            0,
+            1.0,
+            1
+          ],
+          "start": 95.6,
+          "draw_end": 100.08,
+          "end": 100.88,
+          "narration": "It means ancestors related to his population once lived across a wider northern world.",
+          "visual": "Scattered camps across a broad northern Eurasian landscape.",
+          "timing_source": {
+            "cue": 26,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "It means ancestors related to his population once lived across a wider northern world."
+          }
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "image": "images/06.png",
+      "sections": [
+        {
+          "id": 1,
+          "rect": [
+            0.0,
+            0,
+            0.25,
+            1
+          ],
+          "start": 100.88,
+          "draw_end": 104.14,
+          "end": 104.36,
+          "narration": "Siberia in the Ice Age was not an empty white margin on the map.",
+          "visual": "A once blank map region fills with small camps.",
+          "timing_source": {
+            "cue": 27,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "Siberia in the Ice Age was not an empty white margin on the map."
+          }
+        },
+        {
+          "id": 2,
+          "rect": [
+            0.25,
+            0,
+            0.5,
+            1
+          ],
+          "start": 104.36,
+          "draw_end": 108.64,
+          "end": 109.44,
+          "narration": "People hunted, made tools, cared for children, and adapted to severe cold.",
+          "visual": "A family beside a hearth, with stone tools and a child.",
+          "timing_source": {
+            "cue": 28,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "People hunted, made tools, cared for children and adapted to severe cold."
+          }
+        },
+        {
+          "id": 3,
+          "rect": [
+            0.5,
+            0,
+            0.75,
+            1
+          ],
+          "start": 109.44,
+          "draw_end": 116.26,
+          "end": 116.48,
+          "narration": "Other ancient genomes from northeastern Siberia reveal related, but distinct, populations living there even earlier.",
+          "visual": "Two differently patterned ancient DNA strands above separate camp scenes.",
+          "timing_source": {
+            "cue": 29,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "Other ancient genomes from northeastern Siberia reveal related, but distinct, populations"
+          }
+        },
+        {
+          "id": 4,
+          "rect": [
+            0.75,
+            0,
+            1.0,
+            1
+          ],
+          "start": 116.48,
+          "draw_end": 120.4,
+          "end": 121.2,
+          "narration": "The region was a long inhabited crossroads, not just a waiting room before the Americas.",
+          "visual": "Several paths meet at a Siberian river junction.",
+          "timing_source": {
+            "cue": 31,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "The region was a long inhabited crossroads, not just a waiting room before the Americas."
+          }
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "image": "images/07.png",
+      "sections": [
+        {
+          "id": 1,
+          "rect": [
+            0.0,
+            0,
+            0.25,
+            1
+          ],
+          "start": 121.2,
+          "draw_end": 124.58,
+          "end": 124.8,
+          "narration": "Now imagine generations moving across that immense landscape.",
+          "visual": "Footprints crossing a wide tundra valley.",
+          "timing_source": {
+            "cue": 32,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "Now imagine generations moving across that immense landscape."
+          }
+        },
+        {
+          "id": 2,
+          "rect": [
+            0.25,
+            0,
+            0.5,
+            1
+          ],
+          "start": 124.8,
+          "draw_end": 130.48,
+          "end": 131.28,
+          "narration": "Some families stay. Others follow animals, rivers, seasons, or opportunities we can no longer see.",
+          "visual": "One camp remains while another walks beside migrating animals.",
+          "timing_source": {
+            "cue": 33,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "Some families stay, others follow animals, rivers, seasons, or opportunities we can no"
+          }
+        },
+        {
+          "id": 3,
+          "rect": [
+            0.5,
+            0,
+            0.75,
+            1
+          ],
+          "start": 131.28,
+          "draw_end": 135.42,
+          "end": 135.64,
+          "narration": "Groups meet and have children; their descendants carry pieces of both histories.",
+          "visual": "Two groups meet at a river and a child stands between them.",
+          "timing_source": {
+            "cue": 35,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "Groups meet and have children."
+          }
+        },
+        {
+          "id": 4,
+          "rect": [
+            0.75,
+            0,
+            1.0,
+            1
+          ],
+          "start": 135.64,
+          "draw_end": 140.04,
+          "end": 140.84,
+          "narration": "Over thousands of years, a population can leave traces far from any grave we have found.",
+          "visual": "Tiny linked dots spread outward from one excavated grave.",
+          "timing_source": {
+            "cue": 37,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "Over thousands of years, a population can leave traces far from any grave we have found."
+          }
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "image": "images/08.png",
+      "sections": [
+        {
+          "id": 1,
+          "rect": [
+            0.0,
+            0,
+            0.25,
+            1
+          ],
+          "start": 140.84,
+          "draw_end": 145.974,
+          "end": 146.194,
+          "narration": "To the east, descendants of this northern ancestry mixed with people carrying East Asian related ancestry.",
+          "visual": "Two differently shaded ancestry streams meet in eastern Siberia.",
+          "timing_source": {
+            "cue": 38,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "To the east, descendants of this northern ancestry, mixed with people carrying East Asian"
+          }
+        },
+        {
+          "id": 2,
+          "rect": [
+            0.25,
+            0,
+            0.5,
+            1
+          ],
+          "start": 146.194,
+          "draw_end": 150.8,
+          "end": 151.6,
+          "narration": "That mixture was part of the deep history of the founding populations of the Americas.",
+          "visual": "A new braided stream flows toward a distant American coastline.",
+          "timing_source": {
+            "cue": 39,
+            "word_offset": 2,
+            "method": "estimated_within_cue",
+            "cue_text": "related ancestry, that mixture was part of the deep history of the founding populations"
+          }
+        },
+        {
+          "id": 3,
+          "rect": [
+            0.5,
+            0,
+            0.75,
+            1
+          ],
+          "start": 151.6,
+          "draw_end": 156.86,
+          "end": 157.08,
+          "narration": "It happened in Asia, long before there were borders named Russia, Canada, or the United States.",
+          "visual": "A prehistoric landscape lies beneath faint modern border lines that dissolve.",
+          "timing_source": {
+            "cue": 41,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "It happened in Asia, long before they were borders named Russia, Canada, or the United"
+          }
+        },
+        {
+          "id": 4,
+          "rect": [
+            0.75,
+            0,
+            1.0,
+            1
+          ],
+          "start": 157.08,
+          "draw_end": 162.04,
+          "end": 162.84,
+          "narration": "So the first Americans did not arrive as a simple, unmixed branch from a single modern population.",
+          "visual": "A family tree shows two roots joining before an American branch.",
+          "timing_source": {
+            "cue": 43,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "So the first Americans did not arrive as a simple, unmixed branch from a single modern"
+          }
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "image": "images/09.png",
+      "sections": [
+        {
+          "id": 1,
+          "rect": [
+            0.0,
+            0,
+            0.25,
+            1
+          ],
+          "start": 162.84,
+          "draw_end": 167.62,
+          "end": 167.84,
+          "narration": "During the last Ice Age, lower seas exposed land between northeast Asia and Alaska.",
+          "visual": "A lowered sea reveals land between two coastlines.",
+          "timing_source": {
+            "cue": 45,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "During the last Ice Age, lower seas exposed land between Northeast Asia and Alaska."
+          }
+        },
+        {
+          "id": 2,
+          "rect": [
+            0.25,
+            0,
+            0.5,
+            1
+          ],
+          "start": 167.84,
+          "draw_end": 172.68,
+          "end": 173.48,
+          "narration": "We call that broad region Beringia. It was habitat, not a narrow bridge with a queue.",
+          "visual": "A broad tundra landscape contains animals, plants, and a small camp.",
+          "timing_source": {
+            "cue": 46,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "We call that broad region Beringia."
+          }
+        },
+        {
+          "id": 3,
+          "rect": [
+            0.5,
+            0,
+            0.75,
+            1
+          ],
+          "start": 173.48,
+          "draw_end": 176.86,
+          "end": 177.08,
+          "narration": "People could live, move, and change there over many generations.",
+          "visual": "Generations of family silhouettes appear along a winding local path.",
+          "timing_source": {
+            "cue": 48,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "People could live, move, and change there over many generations."
+          }
+        },
+        {
+          "id": 4,
+          "rect": [
+            0.75,
+            0,
+            1.0,
+            1
+          ],
+          "start": 177.08,
+          "draw_end": 180.6,
+          "end": 181.4,
+          "narration": "How and when the founding populations traveled onward remains an active question.",
+          "visual": "Two possible onward routes fade into a question mark.",
+          "timing_source": {
+            "cue": 49,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "How and when the founding populations traveled onward remains an active question."
+          }
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "image": "images/10.png",
+      "sections": [
+        {
+          "id": 1,
+          "rect": [
+            0.0,
+            0,
+            0.25,
+            1
+          ],
+          "start": 181.4,
+          "draw_end": 184.46,
+          "end": 184.68,
+          "narration": "The genetic signal is visible far beyond the crossing itself.",
+          "visual": "A faint DNA thread runs south from Alaska.",
+          "timing_source": {
+            "cue": 50,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "The genetic signal is visible far beyond the crossing itself."
+          }
+        },
+        {
+          "id": 2,
+          "rect": [
+            0.25,
+            0,
+            0.5,
+            1
+          ],
+          "start": 184.68,
+          "draw_end": 190.92,
+          "end": 191.72,
+          "narration": "A child buried in what is now Montana about twelve thousand six hundred years ago carried Mal’ta related ancestry.",
+          "visual": "A respectful burial silhouette appears on a Montana landscape.",
+          "timing_source": {
+            "cue": 51,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "A child buried in what is now Montana, about 12,600 years ago, carried Malta related"
+          }
+        },
+        {
+          "id": 3,
+          "rect": [
+            0.5,
+            0,
+            0.75,
+            1
+          ],
+          "start": 191.72,
+          "draw_end": 195.38,
+          "end": 195.6,
+          "narration": "His genome is closely related to Indigenous peoples of the Americas.",
+          "visual": "Its DNA strand branches toward multiple Indigenous family trees.",
+          "timing_source": {
+            "cue": 53,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "His genome is closely related to indigenous peoples of the Americas."
+          }
+        },
+        {
+          "id": 4,
+          "rect": [
+            0.75,
+            0,
+            1.0,
+            1
+          ],
+          "start": 195.6,
+          "draw_end": 198.96,
+          "end": 199.76,
+          "narration": "By his lifetime, that northern mixture was already part of an American story.",
+          "visual": "An American landscape holds the braided ancestry stream.",
+          "timing_source": {
+            "cue": 54,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "By his lifetime, that northern mixture was already part of an American story."
+          }
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "image": "images/11.png",
+      "sections": [
+        {
+          "id": 1,
+          "rect": [
+            0.0,
+            0,
+            0.25,
+            1
+          ],
+          "start": 199.76,
+          "draw_end": 204.38,
+          "end": 204.6,
+          "narration": "There is a trap here. Genetic kinship is not the same thing as cultural identity.",
+          "visual": "A DNA helix and a woven basket sit in separate circles.",
+          "timing_source": {
+            "cue": 55,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "There is a trap here."
+          }
+        },
+        {
+          "id": 2,
+          "rect": [
+            0.25,
+            0,
+            0.5,
+            1
+          ],
+          "start": 204.6,
+          "draw_end": 210.32,
+          "end": 211.12,
+          "narration": "The Mal’ta child was not a European, and Indigenous Americans did not become European through ancient ancestry.",
+          "visual": "Two modern geographic label cards fall away from an Ice Age family.",
+          "timing_source": {
+            "cue": 57,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "The Malta child was not a European, and indigenous Americans did not become European through"
+          }
+        },
+        {
+          "id": 3,
+          "rect": [
+            0.5,
+            0,
+            0.75,
+            1
+          ],
+          "start": 211.12,
+          "draw_end": 215.58,
+          "end": 215.8,
+          "narration": "Modern labels belong to much later histories; they cannot be pasted onto Ice Age people.",
+          "visual": "A modern map overlay peels off an ancient landscape.",
+          "timing_source": {
+            "cue": 59,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "Modern labels belong to much later histories."
+          }
+        },
+        {
+          "id": 4,
+          "rect": [
+            0.75,
+            0,
+            1.0,
+            1
+          ],
+          "start": 215.8,
+          "draw_end": 220.52,
+          "end": 221.32,
+          "narration": "Their descendants formed distinct communities, languages, and ways of life across the Americas.",
+          "visual": "Diverse communities appear across North and South American land shapes.",
+          "timing_source": {
+            "cue": 61,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "Their descendants formed distinct communities, languages, and ways of life across the Americas."
+          }
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "image": "images/12.png",
+      "sections": [
+        {
+          "id": 1,
+          "rect": [
+            0.0,
+            0,
+            0.25,
+            1
+          ],
+          "start": 221.32,
+          "draw_end": 226.18,
+          "end": 226.4,
+          "narration": "Now turn the map around. The same northern ancestry also left a mark to the west.",
+          "visual": "The braided thread bends west across Eurasia.",
+          "timing_source": {
+            "cue": 62,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "Now turn the map around."
+          }
+        },
+        {
+          "id": 2,
+          "rect": [
+            0.25,
+            0,
+            0.5,
+            1
+          ],
+          "start": 226.4,
+          "draw_end": 231.16,
+          "end": 231.96,
+          "narration": "Ancient DNA from Europe shows that its population history was never a single, unbroken line.",
+          "visual": "A straight family tree becomes a branching one.",
+          "timing_source": {
+            "cue": 64,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "Ancient DNA from Europe shows that its population history was never a single unbroken line."
+          }
+        },
+        {
+          "id": 3,
+          "rect": [
+            0.5,
+            0,
+            0.75,
+            1
+          ],
+          "start": 231.96,
+          "draw_end": 237.86,
+          "end": 238.08,
+          "narration": "Early farmers, western hunter gatherers, and people with northern Eurasian related ancestry all contributed.",
+          "visual": "Three distinct ancestral silhouettes appear beside a field, a forest, and a northern plain.",
+          "timing_source": {
+            "cue": 65,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "Early farmers, western hunter-gatherers, and people with northern Eurasian-related ancestry"
+          }
+        },
+        {
+          "id": 4,
+          "rect": [
+            0.75,
+            0,
+            1.0,
+            1
+          ],
+          "start": 238.08,
+          "draw_end": 241.68,
+          "end": 242.48,
+          "narration": "Europe’s later populations were made through meetings between groups with different pasts.",
+          "visual": "The three strands weave into a new cloth pattern.",
+          "timing_source": {
+            "cue": 67,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "Europe's later populations were made through meetings between groups with different"
+          }
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "image": "images/13.png",
+      "sections": [
+        {
+          "id": 1,
+          "rect": [
+            0.0,
+            0,
+            0.25,
+            1
+          ],
+          "start": 242.48,
+          "draw_end": 247.66,
+          "end": 247.88,
+          "narration": "One route ran through eastern European hunter gatherers, who carried some ancestry related to Mal’ta.",
+          "visual": "A forest camp in eastern Europe holds a faint northern DNA motif.",
+          "timing_source": {
+            "cue": 69,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "One route ran through Eastern European hunter-gatherers, who carried some ancestry related"
+          }
+        },
+        {
+          "id": 2,
+          "rect": [
+            0.25,
+            0,
+            0.5,
+            1
+          ],
+          "start": 247.88,
+          "draw_end": 250.76,
+          "end": 251.56,
+          "narration": "They were separated from him by enormous distance and thousands of years.",
+          "visual": "A long path crosses many suns and moons.",
+          "timing_source": {
+            "cue": 71,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "They were separated from him by enormous distance and thousands of years."
+          }
+        },
+        {
+          "id": 3,
+          "rect": [
+            0.5,
+            0,
+            0.75,
+            1
+          ],
+          "start": 251.56,
+          "draw_end": 255.94,
+          "end": 256.16,
+          "narration": "They were not copies of his people. Each generation had its own mixture and history.",
+          "visual": "Successive human silhouettes change their patterned ancestry bands.",
+          "timing_source": {
+            "cue": 72,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "They were not copies of his people."
+          }
+        },
+        {
+          "id": 4,
+          "rect": [
+            0.75,
+            0,
+            1.0,
+            1
+          ],
+          "start": 256.16,
+          "draw_end": 260.42,
+          "end": 261.22,
+          "narration": "Yet that faint inherited connection helped explain a missing piece in Europe’s genetic puzzle.",
+          "visual": "A puzzle piece slips into an outline of Europe.",
+          "timing_source": {
+            "cue": 74,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "Yet that faint inherited connection helped explain a missing piece in Europe's genetic"
+          }
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "image": "images/14.png",
+      "sections": [
+        {
+          "id": 1,
+          "rect": [
+            0.0,
+            0,
+            0.25,
+            1
+          ],
+          "start": 261.22,
+          "draw_end": 266.9,
+          "end": 267.12,
+          "narration": "Much later, communities on the steppe north of the Black and Caspian Seas formed through further mixing.",
+          "visual": "Herds and families meet on a steppe between two seas.",
+          "timing_source": {
+            "cue": 76,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "Much later, communities on the step north of the black and caspian seas formed through"
+          }
+        },
+        {
+          "id": 2,
+          "rect": [
+            0.25,
+            0,
+            0.5,
+            1
+          ],
+          "start": 267.12,
+          "draw_end": 271.72,
+          "end": 272.52,
+          "narration": "Pastoralist groups associated with the Yamnaya spread across parts of Europe around five thousand years ago.",
+          "visual": "A wagon and pastoralist group move toward Europe.",
+          "timing_source": {
+            "cue": 78,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "Pastoralist groups associated with the Amnaya spread across parts of Europe around 5,000"
+          }
+        },
+        {
+          "id": 3,
+          "rect": [
+            0.5,
+            0,
+            0.75,
+            1
+          ],
+          "start": 272.52,
+          "draw_end": 278.1,
+          "end": 278.32,
+          "narration": "Their ancestry included a contribution from eastern hunter gatherers, which carried that older northern thread.",
+          "visual": "A small old thread appears inside a thicker mixed ancestry braid.",
+          "timing_source": {
+            "cue": 80,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "Their ancestry included a contribution from Eastern hunter-gatherers, which carried that"
+          }
+        },
+        {
+          "id": 4,
+          "rect": [
+            0.75,
+            0,
+            1.0,
+            1
+          ],
+          "start": 278.32,
+          "draw_end": 281.8,
+          "end": 282.6,
+          "narration": "The signal traveled west again, now inside a very different population.",
+          "visual": "The braid reaches western fields and villages.",
+          "timing_source": {
+            "cue": 82,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "The signal traveled west again, now inside a very different population."
+          }
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "image": "images/15.png",
+      "sections": [
+        {
+          "id": 1,
+          "rect": [
+            0.0,
+            0,
+            0.25,
+            1
+          ],
+          "start": 282.6,
+          "draw_end": 287.54,
+          "end": 287.76,
+          "narration": "Ancient genomes show that this steppe movement changed ancestry in many European regions.",
+          "visual": "An earlier village and arriving group appear side by side.",
+          "timing_source": {
+            "cue": 83,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "Ancient genomes show that this step movement changed ancestry in many European regions."
+          }
+        },
+        {
+          "id": 2,
+          "rect": [
+            0.25,
+            0,
+            0.5,
+            1
+          ],
+          "start": 287.76,
+          "draw_end": 292.8,
+          "end": 293.6,
+          "narration": "It did not erase everyone who was already there; people met, mixed, and lived on.",
+          "visual": "Their descendants stand together with mixed ancestry patterns.",
+          "timing_source": {
+            "cue": 84,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "It did not erase everyone who was already there."
+          }
+        },
+        {
+          "id": 3,
+          "rect": [
+            0.5,
+            0,
+            0.75,
+            1
+          ],
+          "start": 293.6,
+          "draw_end": 297.94,
+          "end": 298.16,
+          "narration": "Archaeologists also track changing burial customs, tools, and settlement patterns.",
+          "visual": "A pot, burial mound, and house outline form an archaeological cluster.",
+          "timing_source": {
+            "cue": 86,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "Archaeologists also track changing burial customs, tools, and settlement patterns."
+          }
+        },
+        {
+          "id": 4,
+          "rect": [
+            0.75,
+            0,
+            1.0,
+            1
+          ],
+          "start": 298.16,
+          "draw_end": 303.2,
+          "end": 304.0,
+          "narration": "DNA reveals movement of people, while objects and landscapes help us ask how they lived.",
+          "visual": "A DNA helix and artifacts point toward a shared human scene.",
+          "timing_source": {
+            "cue": 87,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "DNA reveals movement of people, while objects and landscapes help us ask how they lived."
+          }
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "image": "images/16.png",
+      "sections": [
+        {
+          "id": 1,
+          "rect": [
+            0.0,
+            0,
+            0.25,
+            1
+          ],
+          "start": 304.0,
+          "draw_end": 308.86,
+          "end": 309.08,
+          "narration": "Related steppe ancestry later moved eastward too, reaching parts of Central and South Asia.",
+          "visual": "A route from the steppe bends toward Central and South Asia.",
+          "timing_source": {
+            "cue": 88,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "Added step ancestry later moved eastward to reaching parts of Central and South Asia."
+          }
+        },
+        {
+          "id": 2,
+          "rect": [
+            0.25,
+            0,
+            0.5,
+            1
+          ],
+          "start": 309.08,
+          "draw_end": 312.6,
+          "end": 313.4,
+          "narration": "But South Asian history is much older and more layered than that one movement.",
+          "visual": "A thick woven cloth reveals many older colored strands.",
+          "timing_source": {
+            "cue": 89,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "But South Asian history is much older and more layered than that one movement."
+          }
+        },
+        {
+          "id": 3,
+          "rect": [
+            0.5,
+            0,
+            0.75,
+            1
+          ],
+          "start": 313.4,
+          "draw_end": 317.02,
+          "end": 317.24,
+          "narration": "Ancient populations there had already formed through other deep encounters.",
+          "visual": "Earlier communities meet beside a river and farming fields.",
+          "timing_source": {
+            "cue": 90,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "Ancient populations there had already formed through other deep encounters."
+          }
+        },
+        {
+          "id": 4,
+          "rect": [
+            0.75,
+            0,
+            1.0,
+            1
+          ],
+          "start": 317.24,
+          "draw_end": 321.72,
+          "end": 322.52,
+          "narration": "A small northern genetic thread can be real without becoming the whole story of a continent.",
+          "visual": "One thin strand sits inside a broad, intricate tapestry.",
+          "timing_source": {
+            "cue": 91,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "A small northern genetic thread can be real without becoming the whole story of a continent."
+          }
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "image": "images/17.png",
+      "sections": [
+        {
+          "id": 1,
+          "rect": [
+            0.0,
+            0,
+            0.25,
+            1
+          ],
+          "start": 322.52,
+          "draw_end": 327.58,
+          "end": 327.8,
+          "narration": "This is why the headline version, one lost tribe conquering continents, would be misleading.",
+          "visual": "A dramatic single arrow curls up and disappears.",
+          "timing_source": {
+            "cue": 92,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "This is why the headline version, one lost tribe conquering continents, would be misleading."
+          }
+        },
+        {
+          "id": 2,
+          "rect": [
+            0.25,
+            0,
+            0.5,
+            1
+          ],
+          "start": 327.8,
+          "draw_end": 333.24,
+          "end": 334.04,
+          "narration": "The evidence points to related ancestries moving and mixing through multiple populations over immense time.",
+          "visual": "Many small paths join and split across a broad map.",
+          "timing_source": {
+            "cue": 93,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "The evidence points to related ancestry's moving and mixing through multiple populations"
+          }
+        },
+        {
+          "id": 3,
+          "rect": [
+            0.5,
+            0,
+            0.75,
+            1
+          ],
+          "start": 334.04,
+          "draw_end": 338.38,
+          "end": 338.6,
+          "narration": "Some links are direct enough to model; others are inferred from incomplete samples.",
+          "visual": "Solid and dotted branches appear in a cautious family diagram.",
+          "timing_source": {
+            "cue": 95,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "Some links are direct enough to model, others are inferred from incomplete samples."
+          }
+        },
+        {
+          "id": 4,
+          "rect": [
+            0.75,
+            0,
+            1.0,
+            1
+          ],
+          "start": 338.6,
+          "draw_end": 343.6,
+          "end": 344.4,
+          "narration": "The exciting discovery is a network of relationships where an old map showed isolated boxes.",
+          "visual": "Separate boxes open into a connected web.",
+          "timing_source": {
+            "cue": 96,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "The exciting discovery is a network of relationships where an old map showed isolated boxes."
+          }
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "image": "images/18.png",
+      "sections": [
+        {
+          "id": 1,
+          "rect": [
+            0.0,
+            0,
+            0.25,
+            1
+          ],
+          "start": 344.4,
+          "draw_end": 348.46,
+          "end": 348.68,
+          "narration": "Ancient DNA works best when we can compare people from different places and times.",
+          "visual": "A lone dot appears on a blank timeline.",
+          "timing_source": {
+            "cue": 97,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "Ancient DNA works best when we can compare people from different places and times."
+          }
+        },
+        {
+          "id": 2,
+          "rect": [
+            0.25,
+            0,
+            0.5,
+            1
+          ],
+          "start": 348.68,
+          "draw_end": 351.899,
+          "end": 352.699,
+          "narration": "One genome gives a point. Many genomes begin to show a moving pattern.",
+          "visual": "More dated dots reveal a wavering path.",
+          "timing_source": {
+            "cue": 98,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "One genome gives a point."
+          }
+        },
+        {
+          "id": 3,
+          "rect": [
+            0.5,
+            0,
+            0.75,
+            1
+          ],
+          "start": 352.699,
+          "draw_end": 356.98,
+          "end": 357.2,
+          "narration": "But the ground has preserved only a tiny, uneven sample of everyone who lived.",
+          "visual": "Large empty spaces remain around the sparse dots.",
+          "timing_source": {
+            "cue": 99,
+            "word_offset": 8,
+            "method": "estimated_within_cue",
+            "cue_text": "Many genomes begin to show a moving pattern, but the ground has preserved only a tiny, uneven"
+          }
+        },
+        {
+          "id": 4,
+          "rect": [
+            0.75,
+            0,
+            1.0,
+            1
+          ],
+          "start": 357.2,
+          "draw_end": 362.36,
+          "end": 363.16,
+          "narration": "A new burial can shift the picture, especially in places where almost no ancient DNA survives.",
+          "visual": "A newly found dot nudges a penciled route into a new curve.",
+          "timing_source": {
+            "cue": 101,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "A new burial can shift the picture, especially in places where almost no ancient DNA"
+          }
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "image": "images/19.png",
+      "sections": [
+        {
+          "id": 1,
+          "rect": [
+            0.0,
+            0,
+            0.25,
+            1
+          ],
+          "start": 363.16,
+          "draw_end": 366.02,
+          "end": 366.24,
+          "narration": "Even the word ancestor can make the story sound too tidy.",
+          "visual": "A tidy straight family tree begins to blur.",
+          "timing_source": {
+            "cue": 103,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "Even the word ancestor can make the story sound too tidy."
+          }
+        },
+        {
+          "id": 2,
+          "rect": [
+            0.25,
+            0,
+            0.5,
+            1
+          ],
+          "start": 366.24,
+          "draw_end": 371.12,
+          "end": 371.92,
+          "narration": "The Mal’ta child is a useful genetic reference, a window into people related to later ancestors.",
+          "visual": "A small window frames the child inside a larger crowd.",
+          "timing_source": {
+            "cue": 104,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "The multer child is a useful genetic reference."
+          }
+        },
+        {
+          "id": 3,
+          "rect": [
+            0.5,
+            0,
+            0.75,
+            1
+          ],
+          "start": 371.92,
+          "draw_end": 374.54,
+          "end": 374.76,
+          "narration": "He may never have traveled far from the river where he lived.",
+          "visual": "A child’s footprints stop beside a local riverbank.",
+          "timing_source": {
+            "cue": 106,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "He may never have travelled far from the river where he lived."
+          }
+        },
+        {
+          "id": 4,
+          "rect": [
+            0.75,
+            0,
+            1.0,
+            1
+          ],
+          "start": 374.76,
+          "draw_end": 379.2,
+          "end": 380.0,
+          "narration": "The connections we see were carried by countless others, most of whom left no sampled bones.",
+          "visual": "Many unnamed silhouettes carry threads outward across the horizon.",
+          "timing_source": {
+            "cue": 107,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "The connections we see were carried by countless others, most of whom left no sampled bones."
+          }
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "image": "images/20.png",
+      "sections": [
+        {
+          "id": 1,
+          "rect": [
+            0.0,
+            0,
+            0.25,
+            1
+          ],
+          "start": 380.0,
+          "draw_end": 383.34,
+          "end": 383.56,
+          "narration": "Nor can genes tell us which stories these people told around the fire.",
+          "visual": "People gather around a fire with empty speech bubbles.",
+          "timing_source": {
+            "cue": 108,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "Nor can genes tell us which stories these people told around the fire."
+          }
+        },
+        {
+          "id": 2,
+          "rect": [
+            0.25,
+            0,
+            0.5,
+            1
+          ],
+          "start": 383.56,
+          "draw_end": 387.6,
+          "end": 388.4,
+          "narration": "They cannot recover the names they used for themselves, or what their children feared and loved.",
+          "visual": "A child holds a small object beside unknowable symbols.",
+          "timing_source": {
+            "cue": 109,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "They cannot recover the names they used for themselves, or what their children feared and"
+          }
+        },
+        {
+          "id": 3,
+          "rect": [
+            0.5,
+            0,
+            0.75,
+            1
+          ],
+          "start": 388.4,
+          "draw_end": 393.82,
+          "end": 394.04,
+          "narration": "A carved object can tell us about skill and imagination, but its meaning is not automatically clear.",
+          "visual": "A carved ivory figure casts several possible shadows.",
+          "timing_source": {
+            "cue": 111,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "A carved object can tell us about skill and imagination, but its meaning is not automatically"
+          }
+        },
+        {
+          "id": 4,
+          "rect": [
+            0.75,
+            0,
+            1.0,
+            1
+          ],
+          "start": 394.04,
+          "draw_end": 398.4,
+          "end": 399.2,
+          "narration": "Prehistory becomes richer when DNA, archaeology, and living communities are heard together.",
+          "visual": "A DNA helix, artifact, and present-day community form a balanced circle.",
+          "timing_source": {
+            "cue": 113,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "Prehistory becomes richer when DNA, archaeology, and living communities are heard together."
+          }
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "image": "images/21.png",
+      "sections": [
+        {
+          "id": 1,
+          "rect": [
+            0.0,
+            0,
+            0.25,
+            1
+          ],
+          "start": 399.2,
+          "draw_end": 403.54,
+          "end": 403.76,
+          "narration": "There is another reason to handle this carefully: ancient human remains are not just data.",
+          "visual": "A bone sample rests respectfully on a simple cloth.",
+          "timing_source": {
+            "cue": 114,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "There is another reason to handle this carefully."
+          }
+        },
+        {
+          "id": 2,
+          "rect": [
+            0.25,
+            0,
+            0.5,
+            1
+          ],
+          "start": 403.76,
+          "draw_end": 407.64,
+          "end": 408.44,
+          "narration": "They belonged to people, and discoveries can matter deeply to descendant communities.",
+          "visual": "A present-day community stands beside an ancestral landscape.",
+          "timing_source": {
+            "cue": 116,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "They belong to people, and discoveries can matter deeply to descendant communities."
+          }
+        },
+        {
+          "id": 3,
+          "rect": [
+            0.5,
+            0,
+            0.75,
+            1
+          ],
+          "start": 408.44,
+          "draw_end": 412.46,
+          "end": 412.68,
+          "narration": "Research is strongest when it treats those communities as partners with knowledge and rights.",
+          "visual": "Researchers and community members sit together around a table.",
+          "timing_source": {
+            "cue": 117,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "Research is strongest when it treats those communities as partners with knowledge and rights."
+          }
+        },
+        {
+          "id": 4,
+          "rect": [
+            0.75,
+            0,
+            1.0,
+            1
+          ],
+          "start": 412.68,
+          "draw_end": 417.0,
+          "end": 417.8,
+          "narration": "A striking genetic result should deepen respect, not turn anyone’s ancestry into a spectacle.",
+          "visual": "The bone sample is gently surrounded by a circle of people.",
+          "timing_source": {
+            "cue": 118,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "A striking genetic result should deepen respect, not turn anyone's ancestry into a spectacle."
+          }
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "image": "images/22.png",
+      "sections": [
+        {
+          "id": 1,
+          "rect": [
+            0.0,
+            0,
+            0.25,
+            1
+          ],
+          "start": 417.8,
+          "draw_end": 420.94,
+          "end": 421.16,
+          "narration": "So what, exactly, did the Siberian burial change?",
+          "visual": "The child’s grave appears as a question mark on a map.",
+          "timing_source": {
+            "cue": 119,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "So what exactly did the Siberian burial change?"
+          }
+        },
+        {
+          "id": 2,
+          "rect": [
+            0.25,
+            0,
+            0.5,
+            1
+          ],
+          "start": 421.16,
+          "draw_end": 425.96,
+          "end": 426.76,
+          "narration": "It showed that an ancient population in northern Eurasia was connected to ancestors of Indigenous Americans.",
+          "visual": "A branch extends toward an American ancestry tree.",
+          "timing_source": {
+            "cue": 120,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "It showed that an ancient population in Northern Eurasia was connected to ancestors of indigenous"
+          }
+        },
+        {
+          "id": 3,
+          "rect": [
+            0.5,
+            0,
+            0.75,
+            1
+          ],
+          "start": 426.76,
+          "draw_end": 431.909,
+          "end": 432.129,
+          "narration": "It helped reveal a related ancestral layer in Europe, later carried and reshaped by more migrations.",
+          "visual": "Another branch extends toward layered European ancestry.",
+          "timing_source": {
+            "cue": 122,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "It helped reveal a related ancestral layer in Europe, later carried and reshaped by"
+          }
+        },
+        {
+          "id": 4,
+          "rect": [
+            0.75,
+            0,
+            1.0,
+            1
+          ],
+          "start": 432.129,
+          "draw_end": 438.44,
+          "end": 439.24,
+          "narration": "And it made Siberia visible as a center of human history, not a blank space between destinations.",
+          "visual": "The once empty Siberian region fills with camps and pathways.",
+          "timing_source": {
+            "cue": 123,
+            "word_offset": 2,
+            "method": "estimated_within_cue",
+            "cue_text": "more migrations, and it made Siberia visible as a centre of human history, not a blank space"
+          }
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "image": "images/23.png",
+      "sections": [
+        {
+          "id": 1,
+          "rect": [
+            0.0,
+            0,
+            0.25,
+            1
+          ],
+          "start": 439.24,
+          "draw_end": 441.98,
+          "end": 442.2,
+          "narration": "We still cannot draw every path these families took.",
+          "visual": "A partly erased route crosses an old map.",
+          "timing_source": {
+            "cue": 125,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "We still cannot draw every path these families took."
+          }
+        },
+        {
+          "id": 2,
+          "rect": [
+            0.25,
+            0,
+            0.5,
+            1
+          ],
+          "start": 442.2,
+          "draw_end": 446.44,
+          "end": 447.24,
+          "narration": "The climate changed, coastlines moved, and populations formed and disappeared.",
+          "visual": "Melting ice, shifting shoreline, and changing camps appear in sequence.",
+          "timing_source": {
+            "cue": 126,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "The climate changed, coastlines moved, and populations formed and disappeared."
+          }
+        },
+        {
+          "id": 3,
+          "rect": [
+            0.5,
+            0,
+            0.75,
+            1
+          ],
+          "start": 447.24,
+          "draw_end": 450.538,
+          "end": 450.758,
+          "narration": "Some routes may wait under water or in soil no one has sampled.",
+          "visual": "A submerged campsite and buried bone lie beyond a researcher’s view.",
+          "timing_source": {
+            "cue": 127,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "Some routes may wait under water, or in soil no one has sampled, but the broad lesson"
+          }
+        },
+        {
+          "id": 4,
+          "rect": [
+            0.75,
+            0,
+            1.0,
+            1
+          ],
+          "start": 450.758,
+          "draw_end": 455.84,
+          "end": 456.64,
+          "narration": "But the broad lesson is already clear: human history is full of meetings we once could not see.",
+          "visual": "Two families meet where map lines once ended.",
+          "timing_source": {
+            "cue": 127,
+            "word_offset": 13,
+            "method": "estimated_within_cue",
+            "cue_text": "Some routes may wait under water, or in soil no one has sampled, but the broad lesson"
+          }
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "image": "images/24.png",
+      "sections": [
+        {
+          "id": 1,
+          "rect": [
+            0.0,
+            0,
+            0.25,
+            1
+          ],
+          "start": 456.64,
+          "draw_end": 460.06,
+          "end": 460.28,
+          "narration": "Imagine standing at Mal’ta before anyone knew what a genome was.",
+          "visual": "An archaeologist studies a quiet riverbank.",
+          "timing_source": {
+            "cue": 130,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "Imagine standing at Malta before anyone knew what a genome was."
+          }
+        },
+        {
+          "id": 2,
+          "rect": [
+            0.25,
+            0,
+            0.5,
+            1
+          ],
+          "start": 460.28,
+          "draw_end": 464.84,
+          "end": 465.64,
+          "narration": "You would see a child buried beside an Ice Age settlement, and a world that seemed impossibly remote.",
+          "visual": "The child’s burial and nearby settlement appear under a wide sky.",
+          "timing_source": {
+            "cue": 131,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "You would see a child buried beside an ice age settlement, and a world that seemed impossibly"
+          }
+        },
+        {
+          "id": 3,
+          "rect": [
+            0.5,
+            0,
+            0.75,
+            1
+          ],
+          "start": 465.64,
+          "draw_end": 471.78,
+          "end": 472.0,
+          "narration": "Now that same life opens questions stretching from Siberia to the Americas and across western Eurasia.",
+          "visual": "Threads extend from the grave toward distant continents.",
+          "timing_source": {
+            "cue": 133,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "Now that same life opens questions, stretching from Siberia to the Americas and across"
+          }
+        },
+        {
+          "id": 4,
+          "rect": [
+            0.75,
+            0,
+            1.0,
+            1
+          ],
+          "start": 472.0,
+          "draw_end": 475.84,
+          "end": 476.64,
+          "narration": "The distance did not vanish. We finally learned to see the connections across it.",
+          "visual": "The threads become a delicate web spanning the same wide sky.",
+          "timing_source": {
+            "cue": 135,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "The distance did not vanish."
+          }
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "image": "images/25.png",
+      "sections": [
+        {
+          "id": 1,
+          "rect": [
+            0.0,
+            0,
+            0.25,
+            1
+          ],
+          "start": 476.64,
+          "draw_end": 479.82,
+          "end": 480.04,
+          "narration": "The lost migration was never one march by one named people.",
+          "visual": "A single marching column dissolves into many small family paths.",
+          "timing_source": {
+            "cue": 137,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "The lost migration was never one march by one named people."
+          }
+        },
+        {
+          "id": 2,
+          "rect": [
+            0.25,
+            0,
+            0.5,
+            1
+          ],
+          "start": 480.04,
+          "draw_end": 483.88,
+          "end": 484.68,
+          "narration": "It was a long sequence of movement, mixing, and survival across northern Asia.",
+          "visual": "Camps and meeting places dot a northern landscape through changing seasons.",
+          "timing_source": {
+            "cue": 138,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "It was a long sequence of movement, mixing, and survival across Northern Asia."
+          }
+        },
+        {
+          "id": 3,
+          "rect": [
+            0.5,
+            0,
+            0.75,
+            1
+          ],
+          "start": 484.68,
+          "draw_end": 490.74,
+          "end": 490.96,
+          "narration": "Its descendants carried inherited traces east into the Americas and west into later Eurasian populations.",
+          "visual": "Fine threads travel east and west into distinct communities.",
+          "timing_source": {
+            "cue": 139,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "Its descendants carried inherited traces east into the Americas, and west into later Eurasian"
+          }
+        },
+        {
+          "id": 4,
+          "rect": [
+            0.75,
+            0,
+            1.0,
+            1
+          ],
+          "start": 490.96,
+          "draw_end": 495.12,
+          "end": 495.92,
+          "narration": "What was lost was our view of the connections, until an ancient child helped bring them back.",
+          "visual": "The child’s silhouette stands beside a now connected map.",
+          "timing_source": {
+            "cue": 141,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "What was lost was our view of the connections, until an ancient child helped bring them"
+          }
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "image": "images/26.png",
+      "sections": [
+        {
+          "id": 1,
+          "rect": [
+            0.0,
+            0,
+            0.25,
+            1
+          ],
+          "start": 495.92,
+          "draw_end": 501.42,
+          "end": 501.64,
+          "narration": "That is the real rewrite. Continents were never sealed chapters of separate human stories.",
+          "visual": "Three continent-shaped book pages unfold into one continuous landscape.",
+          "timing_source": {
+            "cue": 143,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "That is the real rewrite."
+          }
+        },
+        {
+          "id": 2,
+          "rect": [
+            0.25,
+            0,
+            0.5,
+            1
+          ],
+          "start": 501.64,
+          "draw_end": 506.24,
+          "end": 507.04,
+          "narration": "People moved through landscapes that looked different from ours, carrying relationships we could not yet trace.",
+          "visual": "Families cross rivers and open tundra beneath an ancient coastline.",
+          "timing_source": {
+            "cue": 145,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "People moved through landscapes that looked different from ours, carrying relationships"
+          }
+        },
+        {
+          "id": 3,
+          "rect": [
+            0.5,
+            0,
+            0.75,
+            1
+          ],
+          "start": 507.04,
+          "draw_end": 510.34,
+          "end": 510.56,
+          "narration": "Each new ancient genome adds a few lines to that unfinished map.",
+          "visual": "A new DNA dot adds a short path to an unfinished map.",
+          "timing_source": {
+            "cue": 147,
+            "word_offset": 0,
+            "method": "cue_start",
+            "cue_text": "Each new ancient genome adds a few lines to that unfinished map, and somewhere beneath"
+          }
+        },
+        {
+          "id": 4,
+          "rect": [
+            0.75,
+            0,
+            1.0,
+            1
+          ],
+          "start": 510.56,
+          "draw_end": 514.12,
+          "end": 514.92,
+          "narration": "And somewhere beneath the next patch of ground, another quiet life may change it again.",
+          "visual": "A small buried silhouette rests below blank earth and open white space.",
+          "timing_source": {
+            "cue": 147,
+            "word_offset": 12,
+            "method": "estimated_within_cue",
+            "cue_text": "Each new ancient genome adds a few lines to that unfinished map, and somewhere beneath"
+          }
+        }
+      ]
+    }
+  ]
+}
