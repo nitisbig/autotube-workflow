@@ -160,10 +160,6 @@ def render_scene(cfg):
                     obj.move_to(vec(s['position']))
                 return obj
 
-            # A consistent, quiet frame gives every lesson a visual hierarchy.
-            brand = Text(cfg.get('series','MATH / EXPLAINED'), font_size=17, color=color('muted')).move_to([-4.8,3.55,0])
-            rule = Line([-6.25,3.2,0],[6.25,3.2,0], color=color('grid'), stroke_width=1)
-            self.add(brand, rule)
             end = math.ceil(cfg['duration']*cfg['export']['fps'] - 1e-8)/cfg['export']['fps']
             for event_index, event in enumerate(cfg['timeline'], 1):
                 at = event['time']
@@ -241,6 +237,7 @@ def main():
     parser.add_argument('--output', help='Output MP4 path')
     parser.add_argument('--validate', action='store_true', help='Validate timing and assets without rendering')
     parser.add_argument('--encode-only', action='store_true', help='Re-encode an existing picture render; do not change visual config')
+    parser.add_argument('--subtitles', action='store_true', help='Include a selectable subtitle track in the MP4')
     parser.add_argument('--local', action='store_true', help='Use locally installed Manim instead of Docker')
     parser.add_argument('--inside', action='store_true', help=argparse.SUPPRESS)
     args = parser.parse_args()
@@ -260,8 +257,9 @@ def main():
     work.mkdir(parents=True,exist_ok=True)
     cfg['_work'] = str(work)
     (work/'resolved_config.json').write_text(json.dumps(cfg,indent=2))
-    captions = output.with_suffix('.srt')
-    write_captions(cfg,captions)
+    if args.subtitles:
+        captions = work/'captions.srt'
+        write_captions(cfg,captions)
     if args.encode_only:
         picture = Path((work/'picture_path.txt').read_text())
         if not picture.is_file():
@@ -285,12 +283,20 @@ def main():
         picture = render_scene(cfg)
         (work/'picture_path.txt').write_text(str(picture))
     ex = cfg['export']
-    subprocess.run(['ffmpeg','-y','-v','warning','-i',str(picture),'-i',cfg['audio'],'-i',str(captions),
-        '-map','0:v:0','-map','1:a:0','-map','2:s:0','-t',str(cfg['duration']),
+    command = ['ffmpeg','-y','-v','warning','-i',str(picture),'-i',cfg['audio']]
+    if args.subtitles:
+        command += ['-i',str(captions)]
+    command += ['-map','0:v:0','-map','1:a:0']
+    if args.subtitles:
+        command += ['-map','2:s:0']
+    command += ['-t',str(cfg['duration']),
         '-c:v','libx264','-profile:v','high','-pix_fmt','yuv420p','-crf',str(ex['crf']),'-preset',ex['preset'],'-threads','2',
         '-r',str(ex['fps']),'-vf','scale=out_color_matrix=bt709:out_range=tv','-color_range','tv','-color_primaries','bt709','-color_trc','bt709','-colorspace','bt709',
-        '-c:a','aac','-b:a','320k','-ar','48000','-ac','2','-c:s','mov_text',
-        '-metadata:s:s:0','language=eng','-movflags','+faststart',str(output)],check=True)
+        '-c:a','aac','-b:a','320k','-ar','48000','-ac','2']
+    if args.subtitles:
+        command += ['-c:s','mov_text','-metadata:s:s:0','language=eng']
+    command += ['-movflags','+faststart',str(output)]
+    subprocess.run(command,check=True)
     report = probe(output)
     (output.with_suffix('.probe.json')).write_text(json.dumps(report,indent=2))
     print('Exported:',output)
