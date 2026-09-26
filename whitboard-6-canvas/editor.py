@@ -49,6 +49,71 @@ def resolve_image(base, name):
     return matches[0]
 
 
+def audio_pauses(c):
+    return c['audio'].get('pauses', [])
+
+
+def prepare_audio(c, base, output):
+    """Insert sample-exact silence without cutting or stretching narration."""
+    rate = 48000
+    pauses = audio_pauses(c)
+    total = round(c['audio'].get('source_duration', c['duration']) * rate)
+    cuts = [0] + [round(p['source_time'] * rate) for p in pauses] + [total]
+    count = len(cuts) - 1
+    graph = [f'[0:a]aresample={rate},aformat=sample_fmts=s16:channel_layouts=stereo,'
+             f'apad,atrim=end_sample={total},asplit={count}' +
+             ''.join(f'[source{i}]' for i in range(count))]
+    parts = []
+    for i, (start, end) in enumerate(zip(cuts, cuts[1:])):
+        graph.append(f'[source{i}]atrim=start_sample={start}:end_sample={end},'
+                     f'asetpts=PTS-STARTPTS[voice{i}]')
+        parts.append(f'[voice{i}]')
+        if i < len(pauses):
+            samples = round(pauses[i]['duration'] * rate)
+            graph.append(f'anullsrc=r={rate}:cl=stereo,atrim=end_sample={samples},'
+                         f'asetpts=PTS-STARTPTS[silence{i}]')
+            parts.append(f'[silence{i}]')
+    graph.append(''.join(parts) + f'concat=n={len(parts)}:v=0:a=1[out]')
+    subprocess.run(['ffmpeg', '-hide_banner', '-loglevel', 'error', '-y',
+                    '-i', str(base / c['audio']['path']), '-filter_complex', ';'.join(graph),
+                    '-map', '[out]', '-c:a', 'pcm_s16le', str(output)], check=True)
+
+
+class GifAnimation:
+    """Decode disposal/transparency and retain each frame's native duration."""
+    def __init__(self, path, height, mirror=False, anchor=None):
+        frames = []
+        self.ends = []
+        elapsed = 0.0
+        with Image.open(path) as source:
+            source_size = source.size
+            for i in range(source.n_frames):
+                source.seek(i)
+                frames.append(source.convert('RGBA'))
+                elapsed += max(10, source.info.get('duration', 100)) / 1000
+                self.ends.append(elapsed)
+        bounds = [frame.getbbox() for frame in frames if frame.getbbox()]
+        if not bounds:
+            raise ValueError(f'GIF contains no visible frames: {path}')
+        crop = (min(b[0] for b in bounds), min(b[1] for b in bounds),
+                max(b[2] for b in bounds), max(b[3] for b in bounds))
+        self.size = (max(1, round((crop[2]-crop[0])*height/(crop[3]-crop[1]))), height)
+        self.frames = []
+        for frame in frames:
+            frame = frame.crop(crop).resize(self.size, Image.Resampling.LANCZOS)
+            self.frames.append(ImageOps.mirror(frame) if mirror else frame)
+        self.duration = elapsed
+        self.anchor = (0, 0)
+        if anchor is not None:
+            x = (anchor[0]*source_size[0]-crop[0])*self.size[0]/(crop[2]-crop[0])
+            y = (anchor[1]*source_size[1]-crop[1])*self.size[1]/(crop[3]-crop[1])
+            self.anchor = (self.size[0]-x if mirror else x, y)
+
+    def frame(self, t):
+        index = min(len(self.frames)-1, bisect.bisect_right(self.ends, t % self.duration))
+        return self.frames[index]
+
+
 def validate(c, base):
     def need(condition, message):
         if not condition:
@@ -64,7 +129,24 @@ def validate(c, base):
     need(0 <= o['crf'] <= 51, 'CRF must be between 0 and 51')
     need((base / c['audio']['path']).is_file(), 'Audio file is missing')
     duration = float(probe(base / c['audio']['path'])['duration'])
-    need(abs(duration - c['duration']) <= .15, 'Configured duration differs from audio by more than 0.15 seconds')
+    pauses = audio_pauses(c)
+    source_duration = c['audio'].get('source_duration', c['duration'])
+    need(abs(duration - source_duration) <= .15, 'Configured source duration differs from audio by more than 0.15 seconds')
+    previous_pause = 0.0
+    for pause in pauses:
+        need(math.isfinite(pause['source_time']) and math.isfinite(pause['duration']) and
+             previous_pause < pause['source_time'] < source_duration and pause['duration'] > 0,
+             'Audio pauses must have increasing source times and positive durations')
+        previous_pause = pause['source_time']
+    need(abs(source_duration + sum(p['duration'] for p in pauses) - c['duration']) < .001,
+         'Video duration must equal source audio plus inserted pauses')
+    bird = c.get('jackdaw', {})
+    if bird.get('enabled', False):
+        for key in ('watching_path', 'flying_path'):
+            need((base / bird[key]).is_file(), f'Missing jackdaw asset: {bird[key]}')
+        need(0 < bird['watching_height_fraction'] <= .2 and
+             0 < bird['flying_height_fraction'] <= .3, 'Invalid jackdaw size')
+        need(len(bird['beak']) == 2 and all(0 <= x <= 1 for x in bird['beak']), 'Invalid jackdaw beak anchor')
     need(c['board']['columns'] == 3 and c['board']['rows'] == 2, 'This editor uses a 3 by 2 grid')
     need(0 < c['board']['margin_fraction'] < .1 and 0 < c['board']['cell_padding_fraction'] < .2, 'Invalid board margins')
     need(0 < c['reveal']['brush_fraction'] <= .3 and 0 < c['reveal']['row_spacing'] <= 1, 'Invalid reveal settings')
@@ -89,7 +171,17 @@ def validate(c, base):
         previous = b['end']
     need(abs(previous-c['duration']) < .001, 'Last beat must end at duration')
     need(abs(beats[-1]['slide_start']-beats[-1]['end']) < .001, 'Final board must remain on screen')
-    return duration
+    if bird.get('enabled', False) or pauses:
+        slides = [b for b in beats if b['slide_start'] < b['end']]
+        need(len(slides) == len(pauses) == len(beats)//6-1,
+             'Each board change requires one matching silent audio pause')
+        offset = 0.0
+        for beat, pause in zip(slides, pauses):
+            need(abs(beat['slide_start']-(pause['source_time']+offset)) < .001 and
+                 abs(beat['end']-beat['slide_start']-pause['duration']) < .001,
+                 'Board pull must coincide exactly with inserted silence')
+            offset += pause['duration']
+    return c['duration']
 
 
 def smooth(p):
@@ -147,6 +239,14 @@ class Renderer:
             self.points.extend([(xs[0],y),(xs[1],y)])
         self.lengths=[0.0]
         for a,b in zip(self.points,self.points[1:]): self.lengths.append(self.lengths[-1]+math.dist(a,b))
+        self.watching = self.flying = None
+        bird = c.get('jackdaw', {})
+        if bird.get('enabled', False):
+            self.watching = GifAnimation(base / bird['watching_path'],
+                                        round(self.h*bird['watching_height_fraction']))
+            self.flying = GifAnimation(base / bird['flying_path'],
+                                      round(self.h*bird['flying_height_fraction']),
+                                      mirror=True, anchor=bird['beak'])
 
     @lru_cache(maxsize=8)
     def asset(self,index):
@@ -280,7 +380,52 @@ class Renderer:
         self.paste_hand(canvas,(box[0]+12,y),True,opacity)
         self.paste_hand(canvas,(box[2]-12,y),False,opacity)
 
-    def frame(self,t):
+    def paste_watcher(self, canvas, t):
+        bird = self.watching.frame(t)
+        margin = round(self.w*.008)
+        canvas.paste(bird, (self.w-bird.width-margin, round(self.h*.01)), bird)
+
+    def pull_board(self, index, t):
+        beat = self.beats[index]
+        elapsed = t-beat['slide_start']
+        phase = elapsed/(beat['end']-beat['slide_start'])
+        # Reserve the last part for releasing the paper and flying off screen.
+        amount = smooth(phase/.86)
+        offset = round(amount*self.w)
+        edge = self.w-offset
+        canvas = self.blank.copy()
+        canvas.paste(self.board(index//6, 6), (-offset, 0))
+        canvas.paste(self.blank, (edge, 0))
+        draw = ImageDraw.Draw(canvas)
+        if edge > 0:
+            # A temporary page edge makes the white-on-white pull readable.
+            for n in range(7, 0, -1):
+                shade = 225+4*n
+                draw.line((edge-n, 0, edge-n, self.h), fill=(shade,)*3)
+            draw.line((edge, 0, edge, self.h), fill='#c8c8c8', width=2)
+        release = smooth((phase-.86)/.14)
+        mouth = (edge-self.w*.013-release*(self.flying.size[0]+self.w*.025),
+                 self.h*.145+math.sin(elapsed*19)*self.h*.003)
+        if phase < .86:
+            # The beak grips this folded paper tab. It moves with the new page.
+            draw.polygon([(edge+2, mouth[1]-12), (mouth[0], mouth[1]),
+                          (edge+2, mouth[1]+12)], fill='#ffffff', outline='#7c7c7c')
+        bird = self.flying.frame(elapsed)
+        x,y = self.flying.anchor
+        canvas.paste(bird, (round(mouth[0]-x), round(mouth[1]-y)), bird)
+        return canvas
+
+    def frame(self, t):
+        index = min(len(self.beats)-1, max(0,bisect.bisect_right(self.starts,t)-1))
+        beat = self.beats[index]
+        if self.flying is not None and beat['slide_start'] <= t < beat['end']:
+            return self.pull_board(index, t)
+        canvas = self.drawing_frame(t)
+        if self.watching is not None:
+            self.paste_watcher(canvas, t)
+        return canvas
+
+    def drawing_frame(self,t):
         i=min(len(self.beats)-1,max(0,bisect.bisect_right(self.starts,t)-1))
         b=self.beats[i]; cell=i%6; board=i//6
         if t>=b['slide_start'] and b['slide_start']<b['end']:
@@ -329,6 +474,16 @@ class Renderer:
 
 
 def render(c,base,args):
+    if audio_pauses(c):
+        with tempfile.TemporaryDirectory(prefix='whiteboard-audio-') as directory:
+            audio_path = Path(directory) / 'narration_with_pauses.wav'
+            prepare_audio(c, base, audio_path)
+            render_frames(c, base, args, audio_path)
+    else:
+        render_frames(c, base, args, base/c['audio']['path'])
+
+
+def render_frames(c,base,args,audio_path):
     start=args.start
     if not 0<=start<c['duration']: raise ValueError('--start is outside the timeline')
     duration=min(c['duration']-start,args.duration if args.duration is not None else c['duration'])
@@ -342,7 +497,7 @@ def render(c,base,args):
     with tempfile.NamedTemporaryFile(prefix='.whiteboard-',suffix='.mp4',dir=output.parent,delete=False) as f: temporary=Path(f.name)
     command=['ffmpeg','-hide_banner','-loglevel','warning','-y',
         '-f','rawvideo','-pixel_format','rgb24','-video_size',f'{o["width"]}x{o["height"]}',
-        '-framerate',str(fps),'-i','pipe:0','-ss',str(start),'-i',str(base/c['audio']['path']),
+        '-framerate',str(fps),'-i','pipe:0','-ss',str(start),'-i',str(audio_path),
         '-map','0:v:0','-map','1:a:0','-t',f'{duration:.6f}',
         '-vf','scale=in_range=pc:out_range=tv:out_color_matrix=bt709,format=yuv420p',
         '-c:v','libx264','-preset',o['preset'],'-crf',str(o['crf']),
