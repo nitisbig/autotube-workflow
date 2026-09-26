@@ -1,0 +1,728 @@
+1
+00:00:00,000 --> 00:00:02,640
+ Imagine I ask an AI this question.
+
+2
+00:00:02,640 --> 00:00:04,760
+ What is the capital of France?
+
+3
+00:00:04,760 --> 00:00:07,600
+ To you these are words, but to a computer,
+
+4
+00:00:07,600 --> 00:00:09,520
+ the words capital, France,
+
+5
+00:00:09,520 --> 00:00:12,720
+ and even the question itself cannot exist as language.
+
+6
+00:00:12,720 --> 00:00:14,760
+ Computers understand numbers,
+
+7
+00:00:14,760 --> 00:00:16,960
+ so somewhere inside an AI system,
+
+8
+00:00:16,960 --> 00:00:19,400
+ this sentence has to become mathematics.
+
+9
+00:00:19,400 --> 00:00:21,560
+ And one of the most important mathematical objects
+
+10
+00:00:21,560 --> 00:00:25,360
+ making that possible is surprisingly simple, a vector.
+
+11
+00:00:25,360 --> 00:00:27,440
+ So what exactly is a vector?
+
+12
+00:00:27,440 --> 00:00:29,720
+ You may remember vectors from physics,
+
+13
+00:00:29,720 --> 00:00:31,960
+ an arrow pointing in some direction.
+
+14
+00:00:31,960 --> 00:00:34,440
+ For example, this vector might move three units
+
+15
+00:00:34,440 --> 00:00:36,800
+ to the right and two units upward.
+
+16
+00:00:36,800 --> 00:00:40,120
+ We can write it as two numbers, three, two.
+
+17
+00:00:40,120 --> 00:00:43,080
+ The first number tells us how far to move horizontally.
+
+18
+00:00:43,080 --> 00:00:45,720
+ The second tells us how far to move vertically,
+
+19
+00:00:45,720 --> 00:00:48,120
+ but there is another way to think about a vector.
+
+20
+00:00:48,120 --> 00:00:50,600
+ A vector is simply a list of numbers,
+
+21
+00:00:50,600 --> 00:00:54,840
+ three, two, or perhaps three, two, five,
+
+22
+00:00:54,840 --> 00:00:56,800
+ or a thousand different numbers.
+
+23
+00:00:56,800 --> 00:00:59,520
+ And this simple idea gives artificial intelligence
+
+24
+00:00:59,520 --> 00:01:01,280
+ something extremely powerful
+
+25
+00:01:01,280 --> 00:01:03,640
+ a way to turn meaning into geometry.
+
+26
+00:01:03,640 --> 00:01:06,000
+ Let's start with a tiny example.
+
+27
+00:01:06,000 --> 00:01:09,920
+ Suppose we have three words, cat, dog, and car.
+
+28
+00:01:09,920 --> 00:01:11,880
+ We want a computer to somehow understand
+
+29
+00:01:11,880 --> 00:01:13,560
+ that cat and dog are related,
+
+30
+00:01:13,560 --> 00:01:15,160
+ while car is very different.
+
+31
+00:01:15,160 --> 00:01:18,520
+ Imagine giving each word two numerical properties.
+
+32
+00:01:18,520 --> 00:01:21,160
+ The first represents how much the object is related
+
+33
+00:01:21,160 --> 00:01:22,320
+ to animals.
+
+34
+00:01:22,320 --> 00:01:25,640
+ The second represents how much it is related to machines.
+
+35
+00:01:25,640 --> 00:01:29,120
+ A cat might become 0.9, 0.1.
+
+36
+00:01:29,120 --> 00:01:33,080
+ A dog might become 0.85, 0.1.
+
+37
+00:01:33,080 --> 00:01:37,240
+ And a car might become 0.05, 0.95.
+
+38
+00:01:37,240 --> 00:01:39,360
+ Now place these vectors on a graph.
+
+39
+00:01:39,360 --> 00:01:41,120
+ Something interesting happens.
+
+40
+00:01:41,120 --> 00:01:43,200
+ Cat and dog appear close together.
+
+41
+00:01:43,200 --> 00:01:45,200
+ Car appears somewhere else.
+
+42
+00:01:45,200 --> 00:01:47,360
+ We have taken something abstract meaning
+
+43
+00:01:47,360 --> 00:01:49,080
+ and turned it into distance.
+
+44
+00:01:49,080 --> 00:01:51,400
+ This is the basic intuition behind something called
+
+45
+00:01:51,400 --> 00:01:52,360
+ an embedding.
+
+46
+00:01:52,360 --> 00:01:55,200
+ And embedding represents information as vectors.
+
+47
+00:01:55,200 --> 00:01:58,280
+ Real AI systems don't use just two dimensions.
+
+48
+00:01:58,280 --> 00:02:00,480
+ They might use hundreds or thousands.
+
+49
+00:02:00,480 --> 00:02:03,360
+ So instead of representing the word cat with two numbers,
+
+50
+00:02:03,360 --> 00:02:08,640
+ it might look something like 0.17, negative 0.42,
+
+51
+00:02:08,640 --> 00:02:13,800
+ 0.81, 0.06, and hundreds of other values.
+
+52
+00:02:13,800 --> 00:02:16,840
+ Individually, these numbers usually don't have simple meanings
+
+53
+00:02:16,840 --> 00:02:18,640
+ like animal or machine.
+
+54
+00:02:18,640 --> 00:02:21,920
+ But together, their position captures useful patterns.
+
+55
+00:02:21,920 --> 00:02:24,200
+ And this is where vectors become fascinating.
+
+56
+00:02:24,200 --> 00:02:27,120
+ Suppose two vectors point in similar directions.
+
+57
+00:02:27,120 --> 00:02:29,320
+ Mathematically, we can measure their similarity
+
+58
+00:02:29,320 --> 00:02:31,480
+ using something called the dot product.
+
+59
+00:02:31,480 --> 00:02:34,600
+ Take two vectors, multiply their matching components,
+
+60
+00:02:34,600 --> 00:02:36,160
+ then add the results.
+
+61
+00:02:36,160 --> 00:02:38,360
+ If the vectors point in similar directions,
+
+62
+00:02:38,360 --> 00:02:40,320
+ the dot product tends to be large.
+
+63
+00:02:40,320 --> 00:02:42,320
+ If they point in very different directions,
+
+64
+00:02:42,320 --> 00:02:43,960
+ it tends to be smaller.
+
+65
+00:02:43,960 --> 00:02:45,960
+ AI systems can use ideas like this
+
+66
+00:02:45,960 --> 00:02:47,800
+ to compare pieces of information.
+
+67
+00:02:47,800 --> 00:02:50,440
+ So when you type the cat chased the mouse,
+
+68
+00:02:50,440 --> 00:02:53,320
+ the model doesn't see words floating in empty space.
+
+69
+00:02:53,320 --> 00:02:55,640
+ It works with numerical representations
+
+70
+00:02:55,640 --> 00:02:58,840
+ that can be compared, transformed, and combined.
+
+71
+00:02:58,840 --> 00:03:01,200
+ But vectors aren't limited to words.
+
+72
+00:03:01,200 --> 00:03:03,520
+ And image can become vectors too.
+
+73
+00:03:03,520 --> 00:03:07,440
+ Imagine an image of a dog that first the images just pixels.
+
+74
+00:03:07,440 --> 00:03:11,120
+ Every pixel contains numbers describing brightness and color.
+
+75
+00:03:11,120 --> 00:03:13,120
+ A neural network processes those numbers
+
+76
+00:03:13,120 --> 00:03:14,760
+ through layer after layer.
+
+77
+00:03:14,760 --> 00:03:17,240
+ Early layers might respond to simple features,
+
+78
+00:03:17,240 --> 00:03:19,440
+ edges, lines, corners.
+
+79
+00:03:19,440 --> 00:03:22,120
+ Later layers can represent more complex patterns.
+
+80
+00:03:22,120 --> 00:03:25,880
+ Eyes, ears, fur, faces, objects.
+
+81
+00:03:25,880 --> 00:03:29,680
+ Eventually, the image becomes an internal vector representation.
+
+82
+00:03:29,680 --> 00:03:32,120
+ So an image of a dog and the word dog
+
+83
+00:03:32,120 --> 00:03:34,400
+ can both be represented mathematically.
+
+84
+00:03:34,400 --> 00:03:36,520
+ This is what makes systems that connect text
+
+85
+00:03:36,520 --> 00:03:38,000
+ and images possible.
+
+86
+00:03:38,000 --> 00:03:40,240
+ Vectors give different kinds of information,
+
+87
+00:03:40,240 --> 00:03:42,160
+ a common mathematical language.
+
+88
+00:03:42,160 --> 00:03:44,680
+ And there's another reason AI loves vectors.
+
+89
+00:03:44,680 --> 00:03:46,160
+ Computers are incredibly good
+
+90
+00:03:46,160 --> 00:03:49,000
+ at performing operations on large arrays of numbers.
+
+91
+00:03:49,000 --> 00:03:50,800
+ Suppose we have one vector.
+
+92
+00:03:50,800 --> 00:03:53,120
+ We can multiply it by another mathematical object
+
+93
+00:03:53,120 --> 00:03:54,400
+ called a matrix.
+
+94
+00:03:54,400 --> 00:03:57,920
+ A matrix can rotate a vector, stretch it, compress it,
+
+95
+00:03:57,920 --> 00:04:00,960
+ or transform it into a completely different space.
+
+96
+00:04:00,960 --> 00:04:04,040
+ Inside a neural network, this happens constantly.
+
+97
+00:04:04,040 --> 00:04:06,680
+ Vector goes in, matrix transformation.
+
+98
+00:04:06,680 --> 00:04:08,280
+ New vector comes out.
+
+99
+00:04:08,280 --> 00:04:11,440
+ Then another transformation, and another, and another.
+
+100
+00:04:11,440 --> 00:04:14,480
+ What we call a neural network is at a mathematical level,
+
+101
+00:04:14,480 --> 00:04:18,120
+ largely a huge sequence of transformations applied to vectors.
+
+102
+00:04:18,120 --> 00:04:20,960
+ Now let's return to language. Imagine the sentence.
+
+103
+00:04:20,960 --> 00:04:23,880
+ The animal didn't cross the street because it was tired.
+
+104
+00:04:23,880 --> 00:04:25,680
+ What does it refer to?
+
+105
+00:04:25,680 --> 00:04:26,960
+ Probably the animal.
+
+106
+00:04:26,960 --> 00:04:29,000
+ But how could a machine determine that?
+
+107
+00:04:29,000 --> 00:04:31,960
+ Modern language models use a mechanism called attention.
+
+108
+00:04:31,960 --> 00:04:34,120
+ And vectors are at the center of it.
+
+109
+00:04:34,120 --> 00:04:36,440
+ Each word is converted into vectors.
+
+110
+00:04:36,440 --> 00:04:39,200
+ Then the model creates different versions of those vectors,
+
+111
+00:04:39,200 --> 00:04:41,880
+ usually called queries, keys, and values.
+
+112
+00:04:41,880 --> 00:04:44,000
+ The model compares them mathematically.
+
+113
+00:04:44,000 --> 00:04:46,640
+ If two pieces of information are strongly related,
+
+114
+00:04:46,640 --> 00:04:48,960
+ their vectors produce a stronger connection.
+
+115
+00:04:48,960 --> 00:04:51,640
+ So the representation for it can pay more attention
+
+116
+00:04:51,640 --> 00:04:53,480
+ to animal than to street.
+
+117
+00:04:53,480 --> 00:04:56,960
+ This process happens again and again across many layers.
+
+118
+00:04:56,960 --> 00:04:59,400
+ Millions or billions of vector operations
+
+119
+00:04:59,400 --> 00:05:02,400
+ eventually produce the model's understanding of your sentence,
+
+120
+00:05:02,400 --> 00:05:04,640
+ even the output works with vectors.
+
+121
+00:05:04,640 --> 00:05:07,480
+ Suppose the model is trying to predict the next word.
+
+122
+00:05:07,480 --> 00:05:08,800
+ The sky is.
+
+123
+00:05:08,800 --> 00:05:11,600
+ Inside the model is a vector representing everything
+
+124
+00:05:11,600 --> 00:05:13,320
+ it has understood so far.
+
+125
+00:05:13,320 --> 00:05:17,080
+ That vector is transformed into scores for possible next words.
+
+126
+00:05:17,080 --> 00:05:19,000
+ Blue might receive a high score.
+
+127
+00:05:19,000 --> 00:05:20,680
+ Clear might receive another.
+
+128
+00:05:20,680 --> 00:05:22,920
+ Falling might receive a much lower one.
+
+129
+00:05:22,920 --> 00:05:25,120
+ Those scores become probabilities.
+
+130
+00:05:25,120 --> 00:05:26,680
+ One word is selected.
+
+131
+00:05:26,680 --> 00:05:28,400
+ Then the process repeats.
+
+132
+00:05:28,400 --> 00:05:31,760
+ So when an AI generates a paragraph behind every word
+
+133
+00:05:31,760 --> 00:05:34,200
+ are enormous numbers of vector calculations.
+
+134
+00:05:34,200 --> 00:05:37,320
+ But perhaps the most surprising thing about vectors is this.
+
+135
+00:05:37,320 --> 00:05:39,200
+ They can capture relationships.
+
+136
+00:05:39,200 --> 00:05:43,080
+ In a good vector space, similar ideas often appear near each other.
+
+137
+00:05:43,080 --> 00:05:44,880
+ Paris may be close to France.
+
+138
+00:05:44,880 --> 00:05:47,160
+ Tokyo may relate similarly to Japan.
+
+139
+00:05:47,160 --> 00:05:49,880
+ Words involving emotions may form patterns.
+
+140
+00:05:49,880 --> 00:05:52,120
+ Programming concepts may form others.
+
+141
+00:05:52,120 --> 00:05:53,800
+ The geometry isn't perfect.
+
+142
+00:05:53,800 --> 00:05:56,000
+ And it isn't the same as human understanding.
+
+143
+00:05:56,000 --> 00:05:57,600
+ But it can encode enough structure
+
+144
+00:05:57,600 --> 00:06:00,040
+ to make extremely powerful predictions.
+
+145
+00:06:00,040 --> 00:06:03,040
+ This gives us a useful way to think about modern AI.
+
+146
+00:06:03,040 --> 00:06:05,200
+ AI doesn't store knowledge like a dictionary
+
+147
+00:06:05,200 --> 00:06:06,600
+ with neat definitions.
+
+148
+00:06:06,600 --> 00:06:09,440
+ Instead, much of what it learns is distributed across
+
+149
+00:06:09,440 --> 00:06:11,400
+ enormous mathematical spaces.
+
+150
+00:06:11,400 --> 00:06:12,920
+ Ideas become patterns.
+
+151
+00:06:12,920 --> 00:06:14,800
+ Relationships become directions.
+
+152
+00:06:14,800 --> 00:06:16,760
+ Similarity becomes distance.
+
+153
+00:06:16,760 --> 00:06:20,040
+ Computation becomes movement through those spaces.
+
+154
+00:06:20,040 --> 00:06:23,480
+ This is why vectors appear almost everywhere in machine learning.
+
+155
+00:06:23,480 --> 00:06:25,120
+ Text becomes vectors.
+
+156
+00:06:25,120 --> 00:06:26,680
+ Images become vectors.
+
+157
+00:06:26,680 --> 00:06:28,160
+ Audio becomes vectors.
+
+158
+00:06:28,160 --> 00:06:29,800
+ Videos become vectors.
+
+159
+00:06:29,800 --> 00:06:32,080
+ User preferences can become vectors.
+
+160
+00:06:32,080 --> 00:06:34,600
+ Even entire documents can become vectors.
+
+161
+00:06:34,600 --> 00:06:36,360
+ Once something becomes a vector,
+
+162
+00:06:36,360 --> 00:06:38,920
+ mathematics can compare it with something else.
+
+163
+00:06:38,920 --> 00:06:41,440
+ Search engines can find similar documents.
+
+164
+00:06:41,440 --> 00:06:44,480
+ Recommendation systems can find similar interests.
+
+165
+00:06:44,480 --> 00:06:47,440
+ Image systems can connect pictures with descriptions.
+
+166
+00:06:47,440 --> 00:06:51,040
+ Language models can connect one word with the context around it.
+
+167
+00:06:51,040 --> 00:06:53,240
+ The vector itself isn't intelligent.
+
+168
+00:06:53,240 --> 00:06:54,680
+ It's just numbers.
+
+169
+00:06:54,680 --> 00:06:57,360
+ But when billions of these numerical representations
+
+170
+00:06:57,360 --> 00:07:00,560
+ interact through carefully learned mathematical transformations,
+
+171
+00:07:00,560 --> 00:07:02,320
+ something remarkable happens.
+
+172
+00:07:02,320 --> 00:07:04,280
+ A machine begins to recognize patterns
+
+173
+00:07:04,280 --> 00:07:06,600
+ that look surprisingly close to meaning.
+
+174
+00:07:06,600 --> 00:07:09,040
+ So the next time you ask an AI a question,
+
+175
+00:07:09,040 --> 00:07:11,080
+ remember what's happening underneath.
+
+176
+00:07:11,080 --> 00:07:12,520
+ Your words disappear.
+
+177
+00:07:12,520 --> 00:07:13,840
+ They become numbers.
+
+178
+00:07:13,840 --> 00:07:17,320
+ Those numbers become points in enormous mathematical spaces.
+
+179
+00:07:17,320 --> 00:07:20,600
+ Those points are compared, transformed, combined,
+
+180
+00:07:20,600 --> 00:07:22,680
+ and passed through layer after layer.
+
+181
+00:07:22,680 --> 00:07:25,800
+ And eventually, numbers become language again.
+
+182
+00:07:25,800 --> 00:07:29,840
+ AI may seem like magic, but deep underneath it are vectors.
+
