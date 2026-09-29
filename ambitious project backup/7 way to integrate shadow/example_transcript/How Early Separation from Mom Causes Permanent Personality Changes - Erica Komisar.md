@@ -1,0 +1,44 @@
+
+## Transcript
+
+[music] Hi, I'm Erica Komasar and welcome to our talk about why mothers are so important and why they should be respected and admired and why mothering should be prioritized in the first three years. So the first three years are what we call the first critical period of brain development where so much is happening in a baby's brain that is impacted by the physical and emotional presence of the primary attachment figure or the
+
+person in the world who makes that baby feel safe and secure. And what we know is that if that mother or primary attachment figure who's usually the mother isn't physically and emotionally present enough in the first three years, it impacts the developing architecture of that baby's right or social emotional brain. And what is that part of the brain important for? First of all, it's important for emotional regulation,
+
+which is the ability for your emotions to not go too high or too low. It's important for the ability to cope with stress and adversity in the future. It's important for the ability to read social cues in others. It's important for things like later on like executive functioning and judgment. And so the right brain is so important for so so many things. But most importantly, it's the part of our brain that helps us to
+
+trust others and have deep and meaningful and loving relationships. And what we see today in in the modern world is because mothering has been deprioritized, young children are being separated from their mothers or primary attachment figures too early, prematurely where they haven't yet developed that sense of security or safety. We know that it's only after 3 years of mothers from moment to moment soothing babies when
+
+they're in distress, which is what we call emotional regulation. bringing the baby's emotions back to a state of homeostasis that babies can begin to internalize the ability to regulate their emotions in the future. The same with stress. Mothers buffer babies from stress in the first year. In many parts of the world, they wear babies on their bodies to protect them from stress because they're not meant to experience
+
+large amounts of stress. the cortisol in their brains that we are exposing babies to because we are putting them in daycare or separating mothers and babies who have to go back to work, you know, in 6 weeks or 3 months or even six months. These babies are exposed to large amounts of stress and cortisol in their brains and it's changing the development of their brains. So in other parts of the world, babies are worn in
+
+their mother's bodies for the first year and it keeps the amygdalas of tiny little almond shaped part of the brain. That is the stress regulating part of the brain and it's meant to remain offline for the first year and then for the next two years only incrementally brought online. So small amounts of frustration that the baby can accommodate to and develop what we call like a psychic immune system so they can
+
+tolerate separation as time goes on. But what we're doing when we push so much separation and stress onto babies so early is they develop these pathological defenses which we call attachment disorders. And many many children and adults today have these attachment disorders because of modern society's diminishing and demeaning of nurturing and caretaking in particularly in those early years. And there are different
+
+kinds of attachment disorders because they're basically pathological defenses or ways that babies accommodate to the loss of their primary attachment figure or the center of their universe in the first three years. One of those is called an avoidant attachment disorder where on the reunion with the mother when the mother returns after being away for a long time the baby will react by turning away from the mother. We call it
+
+defensive independence and that is most closely linked with depression and difficulty trusting in intimate relationships in the future. You have another kind of attachment disorder called an ambivalent attachment disorder which is basically when the mother returns the baby becomes very anxious and clingy and won't let the mother out of their sight because they're frightened of losing her and that's most
+
+correlated with anxiety in the future and makes it also very difficult for babies to have relationships in the future. And lastly, but not leastly, and maybe most difficult to treat as a disorganized attachment disorder. Upon the reunion, the baby has no strategy. The other two attachment disorders are strategies that the baby uses to cope. But in this case, because the baby has no one strategy, they cycle through many
+
+strategies. They'll turn away from the mother, then cling to the mother, then slap the mother out of anger or be angry at the mother, and then cycle again. And this is most correlated in the future with borderline personality disorders and also the difficulty having relationships in the future. So essentially, when you don't foster that early security and that early relationship with your child, if you
+
+can't sacrifice your own narcissistic desires and needs in the very beginning of that child's life, what ends up happening with that child is that they don't develop a healthy sense of self, a healthy ego or uh a deep sense of security that they internalize and carry with them so they can soo themselves in the future. So mothers are really critical for so many things uh in the first three years, but they're also
+
+critical going forward. I mean, the reality is you're an important part of the security of that child until they're 18 and they leave home. In truth, children's prefrontal cortex or their right or social emotional brain doesn't start to stop developing until they're about 25. in boys about 27. But you know, once they move out of the home, you have less of an opportunity to help them develop this part of the brain. But
+
+as long as they're home with you and you can help be the digestive, the emotional digestive system to them, as they get older, you're processing not only their feelings, but their experiences and um their thoughts. Uh you know, when they come home from school, you're there to help process their emotions and their experiences. And that's a very important part. Being that emotional digestive system and helping them to process what
+
+they experience in life is a very important part of being a parent. And even when they're adolescence and they don't seem to need you, they desperately need you to serve that function for them. So in fact, it's very important to be as present as possible for the first 18 years. That doesn't mean you can't work, but it does mean that you have to prioritize them over your work. Um, and you will have plenty of opportunities in
+
+your life before you have children and after you have children to prioritize your work. But if in fact you prioritize your work at a time when your children need to be the the center of of their universe, they need you to be the center of their universe. Uh, and they need to feel that you prioritize them if they're going to be healthy in the future. So mothering is incredibly important. I can't say how much I admire when people
+
+tell me that they're mothering. And it's become in society such a challenging thing when I and it saddens me greatly when I hear mothers come up and say, "Well, I was at a cocktail party and people ask me what I did and and they said, "Why do people have to ask you what you do?" And so I tell them, "I'm I'm a mother. I'm a full-time mom and and and a homemaker." And people turn literally other women will turn their
+
+backs on those women and completely become disinterested in them. And I think what has happened to society, society used to admire nurturing and caregiving. Women were the keystone species uh in society. They were the nurturers who kept caretaking alive. They cared for the elderly, for the sick, for the for children. They basically were critical to keeping society healthy, emotionally healthy, call it the sunlight in the forest that
+
+helps the chlorophyll, you know. And so now, because we've told women that they're not important, that mothering and nurturing and caretaking is completely unimportant and can be delegated to poorly paid uh workers because it's just not important work. and that what's more important is your career success or the money you make or the stuff you have. And the truth is you can have a career and you can have a
+
+fabulous career. You can have it before you have children. You can have it during having children, but you have to reduce the intensity of that career. Um, so thank you for being here. I hope that this inspires you to be the the best mothers and primary attachment figures you can be. And also gives you a sense of pride in what you're doing.

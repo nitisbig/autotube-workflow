@@ -1,0 +1,39 @@
+
+
+## Transcript
+
+In life, there are lots of skills we  need to learn to navigate the world. We go to school to learn how to read, write,  and do math. These skills are foundational to getting into college, getting our first  jobs, and living as a citizen in society. But there are some skills you don’t get  taught in school that can help you grow and that end up paying off not just in the  short term, but throughout your whole life.
+
+These skills can be difficult to master, but their  longterm benefits far outweigh any frustrations we might experience trying to learn them. Here are 10 difficult skills that, once you’ve learned them, will pay off forever: 1. Working Out Consistently The hardest part about working out isn’t  lifting weights, running long distances, or folding into those yoga poses. The hardest  part is actually working out consistently.
+
+Learning how to make time in your life, at all  stages of your life, to go to the gym, hit the pavement, or roll out your yoga mat is one of the  greatest battles you may face within yourself. Even though it’s all in your head, learning  to work out consistently will have immense short and long term benefits. Working out releases  endorphins, controls weight, reduces your risk of cardiovascular disease, type 2 diabetes, metabolic  syndrome and even some cancers. Improving your
+
+strength has mental and physical benefits that  will echo throughout the rest of your life. If you can master exercising  consistently, the pay off will be huge. 2. Personal Finance Skills No matter how much money you make, if you learn personal finance skills, you  can help improve your financial situation. Do research on personal finance and read books  like “Rich Dad, Poor Dad” by Robert Kiyosaki,
+
+“The 80/20 Principle” by Richard Koch,  or "Financial Freedom" by Grant Sabatier. Learning how to create a budget, save money,  and invest in yourself is a huge asset. When you learn personal finance skills and  can keep track of where your money is going, you’ve set your future self up for success. 3. Meditation Sitting in silence for any amount of time can  be difficult. Many people practice meditation
+
+their entire lives to improve their meditation  skills. But science shows that even meditating for just a few minutes a day can have  vast improvements on your life and brain. Meditation can help you  focus on the present moment, build stress-management skills,  increase creativity and patience, and reduce negative emotions. Meditation also has some major longterm benefits. In a study done by UCLA, “Forever Young(er):  potential age-defying effects of long-term
+
+meditation on gray matter atrophy” — they found  that “gray matter loss was less pronounced in meditators” than in non-meditators. Essentially,  it can help keep your brain preserved as you age! 4. Verbal & Written Communication Skills The way you communicate with the world determines how the world interacts with you. If you can verbally communicate your needs, thoughts, and goals with others in an effective  way, you have a superpower that will help you get
+
+very far in business, relationships, and life. Being able to communicate with the written word also goes a long way — from being able to  craft an email asking your boss for a raise, to writing out a business proposal,  being able to communicate through writing has enormous benefits for your life longterm. As Tony Robbins has said, “To effectively communicate, we must realize that we are all  different in the way we perceive the world
+
+and use this understanding as a guide  to our communication with others.” 5. Waking Up Early For some, waking up early is as natural as breathing.  For others, it takes some getting used to. However, waking up early is one of those  skills that can help you reclaim your day, get more hours, and work on the  things that matter most to you. Many high-earning CEOs have early morning routines  such as Jeff Bezos, Oprah Winfrey, Elon Musk,
+
+Howard Schultz, Jeff Weiner, Martha  Stewart, Tim Cook, and Bob Iger. The most important aspect of waking up early is  that it forces you to plan your day consciously, instead of just letting other people dictate  when you wake up. When you take control of your schedule, you can make room for the things  that really matter and improve your life. 6. Public Speaking Knowing how to command a crowd can have huge  advantages throughout the rest of your life.
+
+If you can communicate to a large audience,  keep their attention, and express your opinions and thoughts, you’ll get a long way towards  accomplishing your goals and aspirations. Public speaking also helps improve your  social connections, leadership skills, logical thinking skills, and more. 7. Get Honest With Yourself Sometimes, looking at ourselves honestly is  one of the hardest things we can do. But if
+
+we don’t understand the truth of ourselves and  our problems, we can never work to overcome them. Learning how to look at yourself  honestly and get real with your issues will help you break through barriers so much  faster than if you kept telling yourself lies. In the words of Gift Gugu Mona “You can never be  true to others, if you keep on lying to yourself.” 8. Leadership Maya Angelou is quoted as saying
+
+“If one is lucky, a solitary fantasy can  totally transform one million realities.” Learning how to lead helps improve your career  options and opportunities, boosts your confidence, and helps bring your vision to life. Without  leadership skills, it’s very hard to make change in the world. Doing it alone is almost  never as effective as bringing a team together. If you can master leadership skills,  you’ll see it’s rewards forever.
+
+9. Decision Making Susan Wojcicki, CEO of Youtube once said “Rarely are  opportunities presented to you in a perfect way. In a nice little box with a yellow bow on top.  ‘Here, open it, it’s perfect. You’ll love it.’ Opportunities – the good ones –  are messy, confusing and hard to recognize. They’re risky. They challenge you.” One of the hardest parts of life is simply deciding what path to take in any given situation.  Sometimes, we can get decision paralysis,
+
+which occurs when there are so many options, we  can’t choose one, so we end up doing nothing. But if you can master the skill of making  decisions, sorting through your options, and making a choice from confidence, you can  keep moving forward without wasting time. Part of decision making is accepting that you  can’t know the outcomes of every possible option. You can only know what you know now, so you have  to make the best decision with that information.
+
+If you discover later down the road that  you should have done something differently, learn how to pivot quickly and without guilt. 10. Listening In The 7 Habits of Highly Effective People:  Powerful Lessons in Personal Change by Stephen R. Covey, he writes that “most people do  not listen with the intent to understand; they listen with the intent to reply.” Listeners are learners. When you can learn how to listen, you’ll  learn all kinds of useful information.
+
+Being able to listen can help you close a sales  deal that’s about to fall through. It can help you repair relationships with friends and family.  It can show you new things you never knew before. Realize that you don’t know everything  and start listening to those around you, they might just have something valuable to share. Try cultivating these ten skills in your own life and see how they affect your life both in the  short and long term. It might just surprise you.
+
+Would you like the full illustration from this  video? Click here and I'll send it right over! If you are already subscribed to my free Art of  Improvement email newsletter, then there's a copy of it already waiting in your inbox. Thank  you for watching and have an awesome week!

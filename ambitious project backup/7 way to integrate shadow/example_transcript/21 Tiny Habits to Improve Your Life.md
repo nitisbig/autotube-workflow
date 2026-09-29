@@ -1,0 +1,59 @@
+
+
+## Transcript
+
+We all want 2021 to be an awesome year. And it can, through simple actions. I love the topic of habits but let’s be honest, it gets overwhelming sometimes. There are articles telling us to change our life in a matter of seconds, as if it was no biggie. I’d love to meditate for 2 hours every day and read 2 books a week, but I’m sorry, I’ve only got 24 hours and other tasks to do. That’s why I started implementing microscopic habits in the past few years.
+
+These never took much time away and don’t steal my energy as some other habits do. But above all, they’ve added to the quality of my life tremendously. Pick one. Pick 13. Or all 21 if you want. You don’t need to do all of them all the time. I often skip some of them when life gets in the way, but I come back as soon as I can. You can too. 1. Write three things you’re grateful for. Hell, start with one if need be.
+
+The goal is to always be looking for the positive in each day. Yes, that’s also for when you’ve had the worst day and want to punch the next person who even dares to look at you. I started this habit 2 years ago and it’s probably the most consistent one I’ve done. It’s easy and helps reframe the bad days. When I struggle to find a positive aspect in the previous day, I usually say I’m grateful for being alive and with a future full of possibilities.
+
+Simple but does the trick in the long run. 2. Refuse once a week. If you accept everything coming your way, you’ll never have time for yourself. Create it by refusing whatever you’re not excited about during the week. Start by refusing once and see how liberating it is. You can also set higher limits of time for others, so there’s always some leeway for yourself. Someone wants to have a meeting you consider pointless?
+
+Say you’re busy. Three friends want your help? Tell one of them they might need to find someone else. As a heads-up: if you currently accept everything, people will need some time to adapt to this change. But, with time, they will accept it. 3. Exercise for a minute when you wake up. One single minute. Nothing more. Even in your busy life, you can find the time for that, right? I’m not asking for a fully-fledged workout, just a few simple exercises.
+
+I usually go for 30 push-ups and a minimum of 30 seconds of planking. Exercising first thing in the morning gets the blood flowing and gets you out of the morning fog you could be experiencing. If you prefer a full workout in the morning, go ahead. But even if you prefer the evening, 1 minute in the morning doesn’t hurt. It helps. 4. Invest in experiences. How often do you spend money on objects? Compare that number to how often you invest in experiences.
+
+My guess is you invest more in objects. And even if you spend the same amount on both, that’s still not the best. What we remember isn’t objects. It’s experiences. At best, objects help us remember some experiences. In 2020, I often met friends outside for a walk or went on short trips with them. We created memories. We bonded. In 2021, I plan on increasing that even more. 5. Organize your home. If you’ve never done it, try it.
+
+Whether you’ve got space or not, you can easily reorganize your home. In which way, you ask? Well, that’ll depend on what you do at home. For me, I have set different spaces for different tasks (reading, working, meditating, sleeping, gaming, and so on). When I play computer games, I transfer my computer to the dedicated spot for gaming. 6. Throw things away. If you’ve never consciously made an effort to throw something away you’ve kept “because
+
+it could be useful”, then try it today. It’s liberating. You might get a taste for it and keep doing it. Or you might want to throw away 465 items as I did last November following the Minimalism Game. Either way, there’s a lot of rubbish you could throw away and that creates space. There’s also a lot of stuff you’re hanging onto even though it doesn’t deserve it. My 11-year collection of the monthly free magazine “KOREA” definitely didn’t have
+
+to stay. Neither did my broken nunchuck. 7. Manage your money. This is not about investing — although that’s also a good habit. This is about knowing where your money is coming from and going to. Most parents have this somewhat figured out, but I’ve seen many other people completely ignore this. It doesn’t take long. You can set a free app like Money Manager, enter what you have and then automize regular
+
+incomes and expenses. When that’s done, just enter in a few taps your other expenses and their categories. Soon enough, you’ll know where you spend your money. Simple and it doesn’t take more than a few seconds! 8. Stand up every hour. This is, without fault, the hardest one of all for me. It’s simple and I know it’s good for the body, yet I can’t seem to remember. Notifications don’t work and even if I remember to stand up while writing, I don’t want
+
+to break my flow. On paper, this is among the “easier” tiny habits to set. Yet, this one’s so hard to remember because we haven’t done it most of our lives. We’ve stayed sitting for hours on end for hundreds of thousands of hours. Change that. 9. Follow this simple proverb. I live my life by “Quand on a pas de tête, on a des jambes.” This means “When we have no head, we have legs.” It might seem weird but I use it as a way to accept whatever happens.
+
+Most often, this is about forgetting something and having to go back home to pick it up. Don’t get angry when you can’t find your keys or forget to buy your wine at the supermarket. Remind yourself you’ve got to have legs and do what needs to be done. Accept that what’s done is done. All you can do is go forward. 10. Ask open-ended questions. Apart from a few topics, I’m not a great talker. I’ve gotten better with a simple trick.
+
+I ask open-ended questions as often as possible. I become a child asking “Why, Where, When, Who, What, Which”, and all other sorts of such questions. Sometimes the situation doesn’t fit for this, but most often it does. Ask open questions whenever you can and you’ll be seen as a better interlocutor. Why? Because you help keep the conversation going and people love talking about themselves. 11. Turn off notifications.
+
+Start for an hour a day. If you can last longer, do it. This isn’t as hard as you think it is. The only reason you’re not doing it is that “being reachable” has become a habit. That’s one you need to change. It takes about 25 minutes to regain your focus, even if you only look at a notification for a second. Erase those for an hour and you’ll be able to accomplish a lot more. I’ve gotten addicted to it so my notifications are off for two-thirds of my day now.
+
+12. Prepare your clothes. Simple but efficient. Why would you waste some of your precious mental energy in the morning when you could use whatever’s left the previous night? It doesn’t create havoc in your daily life, yet helps you save your energy for what matters. Awesome, right? 13. Watch the news less. Chances are you already started doing it in 2020 to avoid the mess that year was. If not, start today.
+
+No matter how curious you are, you don’t need to watch the news 3 times a day, let alone 10. If you can, only watch or read the news once, around midday. You probably don’t need more. I’ve reduced my news-intake to once every two days and this works great. I’m always on track with what happens in the world and never overwhelmed. I even have more time for myself. 14. Drink more water. Another simple tiny habit.
+
+It’s great for your health and you can get it pretty much anywhere. Now I wonder, why aren’t you already drinking more water? Come on, stop watching for a second and do it. 15. Discover one new thing a month. My favorite of them all. Drop all expectations and just discover something new each month. It could be diving into a topic you’ve been curious about. You could read about the battle of Marignano or look into the culture of “Purikura”.
+
+Either way, discovering something new is exciting. It’s also useful because it keeps us curious and slowly expands our skills or knowledge over time. Do it the way you want. Spend 10 hours on it one Saturday or a few minutes a day for a month. What matters is for you to discover something new. 16. Make your bed. Start with a win by making your bed, as Admiral William McRaven said in a speech. Another simple habit to add.
+
+It doesn’t “change your life right away” but, again, that’s not the goal. All we want here is to slightly improve it without messing with our general flow. Get up, make your bed, and then follow with loads of other wins for the rest of the day. 17. Spend a minute a day with yourself. Just one, come on. I know you can do it. No phone. No computer. No tablet, nor friends or pets around. Just you and your thoughts.
+
+Do this while on the toilet if need be. Doing this for a minute won’t change your life either but it’ll help you start being aware of what you think, instead of being on autopilot. Start with a minute and increase this as you go. Think about what you think. Talk to yourself. Just accept whatever your thoughts are and move on. Self-awareness is way underrated in our world. 18. Ask yourself whether what you’re doing is worth it.
+
+There’s a lot of actions we do that don’t matter. To be more precise, many aren’t worth our time. We finish them and move on until we think back a week later thinking about how much time we wasted on it. If you had two months left to live, would you be laying on the couch binge-watching the Queen’s Gambit? Or would you be writing that masterpiece you’ve always wanted? 19. If a task takes 2 minutes, do it right away.
+
+There’s a lot of advice about doing whatever takes less than 5 minutes right away. I disagree. 5 minutes is still quite some time and can mess up the rest of my schedule. Instead, I’ve set 2 minutes as the higher limit to do right away. If it takes 5 minutes, write it on paper and hang it in front of you. Then do it within the next hour and a half. It gives you some leeway yet prevents you from procrastinating for days.
+
+20. Take care of your posture. A bad posture has a lot of repercussions in the long run. I’ve had a hunched back for so long I struggle to keep it straight now. I forget it all the time but whenever it comes to mind, I sit straight again (like I just did when I started writing this part). A bit of effort goes a long way. If you still have a good posture, treasure it and notice when it’s not the case.
+
+If you have a bad posture, hang reminders around. For a while, my phone’s background picture was a simple sentence: “Stand straight!” 21. Read for 15 minutes a day. I know this one takes a bit longer but it’s worth it. As Jim Kwik says all the time, “Leaders are readers.” It’s not just leaders, it’s everybody who wants to live a better life. Whether you read fiction or non-fiction doesn’t matter. Both have their advantages.
+
+What matters is that you read. And if you can’t find 15 minutes each, then go for 1h45 a week. It’s only a start, but it’s more than most people. After all, a survey in 2019 said that 70% of US adults had not been in a bookstore in the last five years. There are big, hard-to-implement, habits. And there are small, easy-to-implement, habits. I love both but it’s clear the latter ones are easier to add to our already (seemingly)
+
+busy life. All things considered, they are also life-changing in the very long run. The only difficulty with those is how hidden their impact is. It’s easy to drop them because you don’t see how useful they are. Keep at them for long enough and your life will improve. 2021 can be that year. You can start changing your life. You can be happier with tiny changes. Hey, you can even start today. Go ahead.
+
+Stand up and go throw something away to start you off. It’s only the beginning.

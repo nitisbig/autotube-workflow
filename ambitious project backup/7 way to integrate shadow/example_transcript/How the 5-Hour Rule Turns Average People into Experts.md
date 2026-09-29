@@ -1,0 +1,28 @@
+
+## Transcript
+
+At the age of 10, Benjamin Franklin left formal schooling to become an apprentice to his father. As a teenager, he showed no particular talent or aptitude aside from his love of books. When he died a little over half a century later, he was America’s most respected statesman, its most famous inventor, a prolific author, and a successful entrepreneur. What happened between these two points to cause such a meteoric rise?
+
+Underlying the answer to this question is a success strategy for life that we can all use, and increasingly must use. Throughout Ben Franklin’s adult life, he consistently invested roughly an hour a day in deliberate learning. I call this Franklin’s five-hour rule: one hour a day on every weekday. Franklin’s learning time consisted of: Waking up early to read and write Setting personal-growth goals (i.e., a virtues list) and tracking the results
+
+Creating a club for “like-minded aspiring artisans and tradesmen who hoped to improve themselves while they improved their community” Turning his ideas into experiments Having morning and evening reflection questions Every time that Franklin took time out of his busy day to follow his five-hour rule and spend at least an hour learning, he accomplished less on that day. However, in the long run, it was arguably the best investment of his time he could have
+
+made. Franklin’s five-hour rule reflects the very simple idea that, over time, the smartest and most successful people are the ones who are constant and deliberate learners. Warren Buffett spends five to six hours per day reading five newspapers and 500 pages of corporate reports. Bill Gates reads 50 books per year. Mark Zuckerberg reads at least one book every two weeks. Elon Musk grew up reading two books a day, according to his brother.
+
+Oprah Winfrey credits books with much of her success: “Books were my pass to personal freedom.” Arthur Blank, co-founder of Home Depot, reads two hours day. Dan Gilbert, self-made billionaire and owner of the Cleveland Cavaliers, reads one to two hours a day. So what would it look like to make the five-hour rule part of our lifestyle? To find out, we need look no further than chess grandmaster and world-champion martial
+
+artist Josh Waitzkin. Instead of squeezing his days for the maximum productivity, he’s actually done the opposite. Waitzkin, who also authored The Art of Learning, purposely creates slack in his day so he has “empty space” for learning, creativity, and doing things at a higher quality. Here’s his explanation of this approach from a recent Tim Ferriss podcast episode: “I have built a life around having empty space for the development of my ideas for
+
+the creative process. And for the cultivation of a physiological state which is receptive enough to tune in very, very deeply to people I work with … In the creative process, it’s so easy to drive for efficiency and take for granted the really subtle internal work that it takes to play on that razor’s edge.” Adding slack to our day allows us to: 1. Plan out the learning. This allows us to think carefully about what we want to learn.
+
+We shouldn’t just have goals for what we want to accomplish. We should also have goals for what we want to learn. 2. Deliberately practice. Rather than doing things automatically and not improving, we can apply the proven principles of deliberate practice so we keep improving. This means doing things like taking time to get honest feedback on our work and practicing specific skills we want to improve.
+
+3. Ruminate. This helps us get more perspective on our lessons learned and assimilate new ideas. It can also help us develop slow hunches in order to have creative breakthroughs. Walking is a great way to process these insights, as shown by many greats who were or are walking fanatics, from Beethoven and Charles Darwin to Steve Jobs and Jack Dorsey. Another powerful way is through conversation partners.
+
+4. Set aside time just for learning. This includes activities like reading, having conversations, participating in a mastermind, taking classes, observing others, etc. 5. Solve problems as they arise. When most people experience problems during the day, they sweep them under the rug so that they can continue their to-do list. Having slack creates the space to address small problems before they turn into big problems.
+
+6. Do small experiments with big potential payoffs. Whether or not an experiment works, it’s an opportunity to learn and test your ideas. For many people, their professional day is measured by how much they get done. As a result, they speed through the day and slow down their improvement rate. The five-hour rule flips the equation by focusing on learning first. To see the implication of this, let’s look at a sales call (note: you can replace “sales
+
+call” with any activity you do repeatedly). Most professionals do a little research before the call, have the call, and then save their notes and move on. Somebody with a learning focus would think through which skill to practice on the call, practice it on the call, and then reflect on the lessons learned. If that person really wanted an extra level of learning, he or she would invite a colleague on the call and have the colleague provide honest feedback afterward.
+
+Embracing a learning lifestyle means that every time we make a sales call, we get better at doing sales calls. Focusing on learning un-automates our behaviors so we can keep improving them rather than plateauing. Every event is an opportunity to improve. By focusing on learning as a lifestyle, we get so much more done over the long term.
